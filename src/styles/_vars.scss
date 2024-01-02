@@ -1,0 +1,16 @@
+// colors
+$primaryColor: #025add;
+$primaryColorLighter: #0c6de0;
+
+$blueGradient: linear-gradient(45deg, $primaryColor, $primaryColorLighter);
+$blueGradientSecond: linear-gradient(
+	45deg,
+	$primaryColorLighter,
+	$primaryColor
+);
+
+// fonts
+$fontSize: 10px;
+$textShadowBlack: 2px 2px 2px black;
+
+//

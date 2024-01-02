@@ -4,6 +4,8 @@ import { loadSlim } from "tsparticles-slim";
 import { useCallback, useMemo } from "react";
 
 const ParticlesComponent = () => {
+	// TODO Tutaj zrobić jakis hook, który zareaguje na szerokość okna przeglądarki i ustawi liczbę kropek
+
 	const options = useMemo(() => {
 		return {
 			background: {
@@ -50,7 +52,7 @@ const ParticlesComponent = () => {
 					value: { min: 1, max: 3 },
 				},
 				number: {
-					value: 70,
+					value: 30,
 				},
 			},
 		};
