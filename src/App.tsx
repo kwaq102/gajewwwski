@@ -1,12 +1,12 @@
 import "./App.css";
 import Header from "./layout/Header";
-import TEst from "./layout/TEst";
+import Navigation from "./layout/Navigation";
 
 function App() {
 	return (
 		<div className="App">
+			<Navigation />
 			<Header />
-			{/* <TEst /> */}
 			<div className="app-div">KAmil</div>
 			<div className="app-div">KAmil</div>
 			<div className="app-div">KAmil</div>
