@@ -12,13 +12,13 @@
 }
 
 .main-nav.nav-bg {
-	// background-image: linear-gradient(
-	// 	45deg,
-	// 	rgba(2, 90, 222, 1) 0%,
-	// 	rgba(2, 21, 222, 1) 100%
-	// );
 	background-color: rgba(2, 21, 222, 1);
 	box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+	background-image: linear-gradient(
+		45deg,
+		rgba(2, 90, 222, 1) 0%,
+		rgba(2, 21, 222, 1) 100%
+	);
 
 	.main-nav__logo {
 		color: white;
@@ -41,13 +41,13 @@
 		rgba(2, 21, 222, 1) 100%
 	);
 	box-shadow: 1px 0px 5px 0px rgb(0, 0, 0);
-
 	transition: transform 0.5s;
 }
 
 .main-nav__list.show-nav {
 	transform: translateX(0%);
 }
+
 .main-nav__logo {
 	align-self: center;
 	font-size: 1.5rem;
@@ -72,14 +72,19 @@
 	font-size: 1.8rem;
 	text-shadow: 1px 1px 1px black;
 	letter-spacing: 0.5px;
-}
-.main-nav__link:hover {
-	color: #dd025a;
-	// text-shadow: 1px 1px 2px black;
+	transition: color 0.3s;
+
+	&:hover {
+		color: $hoverColor;
+		font-weight: 700;
+		text-shadow: 1px 1px 0px black;
+	}
 }
 
 .main-nav__link.active {
-	// color: red;
+	color: $hoverColor;
+	font-weight: 700;
+	text-shadow: 1px 1px 0px black;
 }
 
 /* BURGER */
@@ -142,4 +147,79 @@
 
 .main-nav__btn.open .main-nav__hamburger::after {
 	transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media (min-width: map-get($breakpoints, s)) {
+	.main-nav__list {
+		width: 50%;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.main-nav {
+		padding: 0 10em;
+	}
+	.main-nav__btn {
+		display: none;
+	}
+
+	.main-nav__list {
+		position: static;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+
+		transform: translate(0);
+
+		background: transparent;
+		box-shadow: none;
+	}
+
+	.main-nav__item {
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:hover {
+			.main-nav__link::after {
+				width: 100%;
+			}
+		}
+	}
+
+	.main-nav__link {
+		position: relative;
+		// font-size: 2rem;
+		padding: 0.5rem 1rem;
+		margin: 0 1em;
+		// font-weight: 700;
+
+		&:hover {
+			font-weight: normal;
+			color: white;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			width: 0;
+			height: 2px;
+			max-width: 100%;
+			background: $hoverColor;
+			transition: 0.3s all ease-in-out;
+		}
+	}
+
+	.main-nav__link.active {
+		font-weight: normal;
+		color: white;
+
+		&::after {
+			width: 100%;
+		}
+	}
 }

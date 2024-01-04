@@ -1,7 +1,7 @@
 .header {
 	position: relative;
 	height: 100vh;
-	background-image: url("../img/bg-header-min.jpg");
+	background-image: url("../img/header/bg-header-min.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -79,34 +79,119 @@
 	gap: 1rem;
 }
 
-// .box-left,
-// .box-right {
-// 	width: 50%;
-// }
-
-// .box-left {
-// 	height: 100%;
-// 	// max-height: 80%;
-// 	display: flex;
-// 	justify-content: center;
-// 	// background-image: url("../img/bg7.png");
-// 	background-size: 30%;
-// 	background-repeat: no-repeat;
-// 	background-position: left 20% center;
-// 	background-attachment: fixed;
-// 	z-index: 2;
-// 	img {
-// 		display: block;
-// 		width: 300px;
-// 		// margin-left: auto;
-// 	}
-// }
-
 @keyframes toggleCursor {
 	from {
 		opacity: 0;
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@media (min-width: map-get($breakpoints, s)) {
+	.header {
+		background-size: cover;
+	}
+}
+@media (min-width: map-get($breakpoints, m)) {
+	.header {
+		background-image: url("../img/header/bg-header.jpg");
+		background-position: center;
+	}
+
+	.header-box {
+		top: 50%;
+	}
+
+	.header-title {
+		font-size: 2.8rem;
+		letter-spacing: 4px;
+
+		strong {
+			font-size: 2.1rem;
+		}
+	}
+}
+@media (min-width: map-get($breakpoints, l)) {
+	.header-box {
+		width: 50%;
+	}
+
+	.header-title {
+		font-size: 2.8rem;
+		letter-spacing: 4px;
+
+		strong {
+			font-size: 2.1rem;
+		}
+	}
+
+	.header-text {
+		font-size: 1.8rem;
+		text-align: left;
+	}
+
+	.header-typing {
+		text-align: center;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.box-left {
+		display: block;
+		height: 100%;
+		width: 40%;
+		background: url("../img/bg7.png");
+		background-size: 500px;
+		background-repeat: no-repeat;
+		background-position-y: center;
+		background-position-x: calc(40% - 250px);
+		background-attachment: fixed;
+		opacity: 0.7;
+	}
+	.header-box {
+		position: static;
+		transform: translate(0, 0);
+		text-align: left;
+	}
+
+	.header-title {
+		font-size: 4rem;
+
+		strong {
+			font-size: 3.5rem;
+		}
+	}
+
+	.header-text {
+		margin: 2em 0;
+	}
+
+	.header-typing {
+		text-align: left;
+	}
+
+	.socials {
+		margin: 0;
+		justify-content: start;
+		a {
+			font-size: 1.7rem;
+		}
+	}
+
+	.box-buttons {
+		justify-content: start;
+	}
+}
+@media (min-width: map-get($breakpoints, xxl)) {
+	.header-text {
+		width: 50%;
 	}
 }
