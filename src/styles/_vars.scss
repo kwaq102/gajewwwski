@@ -7,10 +7,14 @@ $breakpoints: (
 	xxl: 1400px,
 );
 
+// $primaryColor: #5b99a9;
+// TODO spr ten kolor wyżej
 // colors
 $primaryColor: #025add;
 $primaryColorLighter: #0c6de0;
-$hoverColor: #dd025a;
+$hoverColor: #dd025a; //zminić nazwę na "przeciwstawny, przeciwny" ?
+$bg-color: #f8f8f8;
+$border-box-color: #bdbdbd;
 
 $blueGradient: linear-gradient(45deg, $primaryColor, $primaryColorLighter);
 $blueGradientSecond: linear-gradient(

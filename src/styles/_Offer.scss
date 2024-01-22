@@ -1,0 +1,44 @@
+.offer {
+	padding: 3em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $bg-color;
+}
+
+.offer__title {
+	@include headingSection();
+}
+
+.offerElement {
+	width: 90%;
+	padding: 0.5em;
+	background-color: #fff;
+	box-shadow: 2px 2px 10px -5px $border-box-color;
+}
+
+.offerElement__icon,
+.offerElement__title,
+.offerElement__description {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.offerElement__icon {
+	display: block;
+	margin: 3rem 0;
+	font-size: 7rem;
+	color: $primaryColor;
+}
+
+.offerElement__title {
+	font-size: 2.4rem;
+	font-weight: 500;
+	color: $primaryColorLighter;
+}
+
+.offerElement__description {
+	font-size: 1.4rem;
+	line-height: 170%;
+}

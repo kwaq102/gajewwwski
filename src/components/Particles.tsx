@@ -6,6 +6,8 @@ import { useCallback, useMemo } from "react";
 const ParticlesComponent = () => {
 	// TODO Tutaj zrobić jakis hook, który zareaguje na szerokość okna przeglądarki i ustawi liczbę kropek
 
+	// TODO ogarnnąć abyt tylko działało na headerze a nie na całej stronie
+
 	const options = useMemo(() => {
 		return {
 			background: {

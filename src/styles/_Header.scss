@@ -5,6 +5,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	overflow: hidden;
 }
 
 .header-box {
@@ -114,7 +115,7 @@
 }
 @media (min-width: map-get($breakpoints, l)) {
 	.header-box {
-		width: 50%;
+		width: 45%;
 	}
 
 	.header-title {
@@ -148,7 +149,7 @@
 		display: block;
 		height: 100%;
 		width: 40%;
-		background: url("../img/bg7.png");
+		background: url("../img/bg.png");
 		background-size: 500px;
 		background-repeat: no-repeat;
 		background-position-y: center;

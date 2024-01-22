@@ -5,7 +5,7 @@ import { useTypingEffect } from "../ts/typing";
 const Header = () => {
 	const text = [
 		"Nowoczesne",
-		"Profesjonale",
+		"Profesjonalne",
 		"Responsywne",
 		"Strony internetowe",
 	];
@@ -24,8 +24,8 @@ const Header = () => {
 						</h1>
 						{/* TODO tekt do zmiany */}
 						<p className="header-text">
-							You can easily change any design to your own. It is also highly
-							customizable SEO friendly template.
+							Strony internetowe tworzone z pasją! Wprowadź swoją markę do
+							cyfrowego świata i odkryj potencjał online już dziś!
 						</p>
 						<p className="header-text header-typing">{textToTyping}</p>
 
@@ -51,8 +51,8 @@ const Header = () => {
 						</div>
 					</div>
 				</div>
+				<Particles />
 			</header>
-			<Particles />
 		</>
 	);
 };
