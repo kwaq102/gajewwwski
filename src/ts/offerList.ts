@@ -2,7 +2,7 @@ export const offerList = [
     {
         iconClass: "fa-solid fa-laptop-code",
         title: "Strony internetowe",
-        description: "Oparte na najnowszych standardach, z myślą o najwyższej jakości i przyjazności przeglądarkom. Podejście 'mobile first' gwarantuje doskonałą widoczność na wszystkich urządzeniach. Klient może być pewien, że jego strona będzie nowoczesna, zgodna z najnowszymi trendami i dostosowana do różnych urządzeń.",
+        description: "Oparte na najnowszych standardach. Podejście 'mobile first' gwarantuje doskonałą widoczność na wszystkich urządzeniach. Klient może być pewien, że jego strona będzie zgodna z najnowszymi trendami i dostosowana do różnych urządzeń.",
     },
 
     {

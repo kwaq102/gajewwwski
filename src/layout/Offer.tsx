@@ -14,7 +14,7 @@ const Offer = () => {
 
 	return (
 		<section className="offer">
-			{/* Tutaj jakiś nagłówiek h2 w osobnym komponencie ale zastanowić się bo nie wiadomo jak bedzie lepiej dla seo */}
+			{/* TODO Tutaj jakiś nagłówiek h2 w osobnym komponencie ale zastanowić się bo nie wiadomo jak bedzie lepiej dla seo */}
 			{/* moje usługi usługi oferta w ofercie w czym mogę Ci pomóc */}
 			<h2 className="offer__title">Oferta</h2>
 			{offer}

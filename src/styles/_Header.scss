@@ -94,6 +94,7 @@
 		background-size: cover;
 	}
 }
+
 @media (min-width: map-get($breakpoints, m)) {
 	.header {
 		background-image: url("../img/header/bg-header.jpg");
