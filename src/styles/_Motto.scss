@@ -1,0 +1,39 @@
+.motto {
+}
+
+.motto__box {
+	position: relative;
+	padding: 5em 1em;
+}
+
+.motto__text {
+	font-size: 1.6rem;
+	text-align: center;
+
+	&::before {
+		position: absolute;
+		content: "\f10d";
+		font-family: "FontAwesome";
+		top: 30px;
+		font-size: 20px;
+		color: rgba(0, 0, 0, 0.1);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		height: 3px;
+		width: 35px;
+		transform: translateX(-50%);
+		border-bottom: 1px solid $hoverColor;
+	}
+}
+
+.motto__author {
+	display: block;
+	font-size: 1.2rem;
+	text-align: right;
+	font-weight: 700;
+}
