@@ -1,4 +1,5 @@
 .motto {
+	padding-top: 2em;
 }
 
 .motto__box {
@@ -7,8 +8,9 @@
 }
 
 .motto__text {
-	font-size: 1.6rem;
+	font-size: 2rem;
 	text-align: center;
+	font-family: "Special Elite", system-ui;
 
 	&::before {
 		position: absolute;
@@ -24,7 +26,6 @@
 		position: absolute;
 		top: 20px;
 		left: 50%;
-		height: 3px;
 		width: 35px;
 		transform: translateX(-50%);
 		border-bottom: 1px solid $hoverColor;
@@ -36,4 +37,43 @@
 	font-size: 1.2rem;
 	text-align: right;
 	font-weight: 700;
+}
+
+@media (min-width: map-get($breakpoints, s)) {
+	.motto__box {
+		width: 400px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: map-get($breakpoints, l)) {
+	.motto__box {
+		width: 600px;
+	}
+
+	.motto__text {
+		margin-top: 0.5em;
+		font-size: 2.5rem;
+
+		&::before {
+			font-size: 30px;
+		}
+
+		&::after {
+			width: 100px;
+		}
+	}
+	.motto__author {
+		margin-top: 1em;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.motto__box {
+		width: 700px;
+	}
+
+	.motto__text {
+		font-size: 3rem;
+	}
 }
