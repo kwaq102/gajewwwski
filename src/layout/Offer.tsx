@@ -2,6 +2,7 @@ import React from "react";
 
 import OfferElement from "../components/OfferElement";
 import { offerList } from "../ts/offerList";
+import HeadingSection from "../components/HeadingSection";
 
 const Offer = () => {
 	const offer = offerList.map(el => (
@@ -14,9 +15,7 @@ const Offer = () => {
 
 	return (
 		<section className="offer">
-			{/* TODO Tutaj jakiś nagłówiek h2 w osobnym komponencie ale zastanowić się bo nie wiadomo jak bedzie lepiej dla seo */}
-			{/* moje usługi usługi oferta w ofercie w czym mogę Ci pomóc */}
-			<h2 className="offer__title">Oferta</h2>
+			<HeadingSection title="Oferta" nameClass="offer__title" />
 			{offer}
 		</section>
 	);
