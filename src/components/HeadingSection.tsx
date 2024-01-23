@@ -6,7 +6,7 @@ interface Props {
 }
 
 const HeadingSection = ({ title, nameClass }: Props) => {
-	return <h2 className={nameClass}>{title}</h2>;
+	return <h2 className={`heading-section ${nameClass}`}>{title}</h2>;
 };
 
 export default HeadingSection;

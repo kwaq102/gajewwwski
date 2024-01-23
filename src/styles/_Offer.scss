@@ -6,12 +6,6 @@
 	align-items: center;
 }
 
-.offer__title {
-	@include headingSection();
-	width: 100%;
-	text-align: center;
-}
-
 .offerElement {
 	height: 320px;
 	width: 90%;

@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 interface Props {
 	textBtn: string;
 	href: string;
@@ -5,9 +7,9 @@ interface Props {
 
 const ButtonLink = ({ textBtn, href }: Props) => {
 	return (
-		<a href={href} className="btn">
+		<NavLink to={href} className="btn">
 			{textBtn}
-		</a>
+		</NavLink>
 	);
 };
 

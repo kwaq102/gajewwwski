@@ -1,3 +1,4 @@
+import About from "./layout/About";
 import Header from "./layout/Header";
 import Motto from "./layout/Motto";
 import Navigation from "./layout/Navigation";
@@ -10,6 +11,7 @@ function App() {
 			<Header />
 			<main className="main">
 				<Motto />
+				<About />
 				<Offer />
 				<div className="app-div">KAmil</div>
 				<div className="app-div">KAmil</div>
