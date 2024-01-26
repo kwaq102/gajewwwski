@@ -57,6 +57,9 @@ const ParticlesComponent = () => {
 					value: 30,
 				},
 			},
+			style: {
+				position: "absolute",
+			},
 		};
 	}, []);
 
