@@ -3,6 +3,7 @@ import React from "react";
 import OfferElement from "../components/OfferElement";
 import { offerList } from "../ts/offerList";
 import HeadingSection from "../components/HeadingSection";
+import { Fade } from "react-awesome-reveal";
 
 const Offer = () => {
 	const offer = offerList.map(el => (
@@ -16,7 +17,9 @@ const Offer = () => {
 	return (
 		<section className="offer">
 			<HeadingSection title="Oferta" nameClass="offer__title" />
-			{offer}
+			<Fade cascade damping={0.1} triggerOnce>
+				{offer}
+			</Fade>
 		</section>
 	);
 };
