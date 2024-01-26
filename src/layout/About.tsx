@@ -4,9 +4,8 @@ import HeadingSection from "../components/HeadingSection";
 const About = () => {
 	return (
 		<section className="about">
-			<HeadingSection nameClass="about__title" title="O mnie" />
-
 			<div className="about__content">
+				<HeadingSection nameClass="about__title" title="O mnie" />
 				<p className="about__content__text">
 					Witaj na mojej stronie! Jestem Kamil - entuzjasta nowych technologii.
 					Jestem freelancerem, a moja pasja to tworznie stron internetowych.

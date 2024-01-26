@@ -49,10 +49,64 @@
 
 .about__image {
 	width: 100%;
-	height: 200px;
-	background-image: url("../img/monitor-7109263_1920.jpg");
+	height: 250px;
+	background-image: url("../img/aboutImg_700.jpg");
 	background-size: cover;
 	background-position: center;
-	// background-attachment: fixed;
 	background-repeat: no-repeat;
+}
+
+@media (min-width: map-get($breakpoints, s)) {
+	.about__content__link-box_icon {
+		width: 20%;
+	}
+	.about__image {
+		height: 350px;
+	}
+}
+
+@media (min-width: map-get($breakpoints, m)) {
+	.about__content {
+		width: 80%;
+		margin: 3em auto;
+	}
+
+	.about__content__links {
+		display: flex;
+	}
+	.about__image {
+		background-position: bottom;
+		background-image: url("../img/aboutImg_1000.jpg");
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.about {
+		display: flex;
+	}
+
+	.about__content {
+		width: 50%;
+		padding: 0 5em;
+		margin: 0;
+	}
+
+	.about__content__link-box_icon {
+		margin-right: 10px;
+	}
+
+	.about__image {
+		width: 50%;
+		height: 600px;
+		background-image: url("../img/aboutImg_vertical.jpg");
+		order: -1;
+	}
+}
+@media (min-width: map-get($breakpoints, xxl)) {
+	.about {
+		padding: 5em 0;
+	}
+	.about__content {
+		padding: 2em 10em;
+	}
 }

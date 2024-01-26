@@ -44,6 +44,7 @@
 
 @media (min-width: map-get($breakpoints, xl)) {
 	.offer {
+		@include widthContent();
 		justify-content: space-evenly;
 	}
 
