@@ -1,0 +1,115 @@
+.myAdvantages {
+	padding: 0 2em 0;
+}
+
+.myAdvantages__title {
+	width: 100%;
+}
+
+.myAdvantages__box-mid {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.myAdvantages__box-mid__image {
+	display: block;
+	width: 100%;
+}
+
+.advantages {
+	list-style: none;
+}
+
+.advantage-item {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-areas:
+		"icon title"
+		"icon description";
+	padding: 2em 0.5em;
+
+	span {
+		grid-area: icon;
+		margin-right: 0.5em;
+		margin-top: 7px;
+		font-size: 3.5rem;
+		color: $primaryColorLighter;
+	}
+
+	h4 {
+		grid-area: title;
+		font-size: 2rem;
+		font-weight: 500;
+		margin-bottom: 0.3em;
+	}
+
+	p {
+		grid-area: description;
+		font-size: 1.3rem;
+		line-height: 170%;
+		.advantage-item__certificates {
+			display: block;
+			text-decoration: none;
+			color: $primaryColorLighter;
+			font-weight: 500;
+		}
+	}
+}
+
+@media (min-width: map-get($breakpoints, l)) {
+	.myAdvantages {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 3em 0;
+	}
+
+	.myAdvantages__title {
+		margin-bottom: 2em;
+	}
+
+	.myAdvantages__box-first,
+	.myAdvantages__box-second {
+		flex-basis: 33%;
+	}
+
+	.myAdvantages__box-first {
+		.advantage-item {
+			grid-template-areas:
+				"title icon"
+				"description icon";
+			text-align: right;
+
+			span {
+				margin-right: 0;
+				margin-left: 0.5em;
+			}
+		}
+	}
+
+	.myAdvantages__box-mid {
+		flex-basis: 30%;
+		align-self: center;
+	}
+
+	.myAdvantages__box-mid__image {
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.myAdvantages__box-mid__image:hover {
+		transform: scale(1.05);
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.myAdvantages {
+		width: $width-content;
+		margin: 0 auto;
+	}
+
+	.advantage-item {
+		span {
+			font-size: 4rem;
+		}
+	}
+}
