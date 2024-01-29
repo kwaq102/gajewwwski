@@ -2,6 +2,7 @@ import About from "./layout/About";
 import Header from "./layout/Header";
 import Motto from "./layout/Motto";
 import MyAdvantages from "./layout/MyAdvantages";
+import MyAdvantagesFooter from "./layout/MyAdvantagesFooter";
 import Navigation from "./layout/Navigation";
 import Offer from "./layout/Offer";
 
@@ -15,6 +16,7 @@ function App() {
 				<About />
 				<Offer />
 				<MyAdvantages />
+				<MyAdvantagesFooter />
 				<div className="app-div">KAmil</div>
 				<div className="app-div">KAmil</div>
 				<div className="app-div">KAmil</div>

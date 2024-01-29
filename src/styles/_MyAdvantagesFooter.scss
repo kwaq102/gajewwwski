@@ -1,0 +1,36 @@
+.myAdvantages__footer {
+	width: 100%;
+	padding: 5em 1em;
+	background: $blueGradient;
+}
+
+.myAdvantages__footer-text {
+	font-size: 1.4rem;
+	letter-spacing: 0.5px;
+	color: #fff;
+	line-height: 200%;
+	text-shadow: 1px 1px 3px black;
+}
+
+@media (min-width: map-get($breakpoints, s)) {
+	.myAdvantages__footer {
+		padding: 5em 3em;
+	}
+}
+
+@media (min-width: map-get($breakpoints, m)) {
+	.myAdvantages__footer {
+		padding: 5em 4em;
+	}
+}
+@media (min-width: map-get($breakpoints, xl)) {
+	.myAdvantages__footer {
+		padding: 6em 4em;
+	}
+
+	.myAdvantages__footer-text {
+		width: 800px;
+		margin: 0 auto;
+		font-size: 1.8rem;
+	}
+}
