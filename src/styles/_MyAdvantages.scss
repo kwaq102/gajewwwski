@@ -8,11 +8,11 @@
 
 .myAdvantages__box-mid {
 	width: 90%;
-	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 
 .myAdvantages__box-mid__image {
-	display: block;
 	width: 100%;
 }
 
