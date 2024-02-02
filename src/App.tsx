@@ -5,6 +5,7 @@ import MyAdvantages from "./layout/MyAdvantages";
 import MyAdvantagesFooter from "./layout/MyAdvantagesFooter";
 import Navigation from "./layout/Navigation";
 import Offer from "./layout/Offer";
+import Portfolio from "./layout/Portfolio";
 
 function App() {
 	return (
@@ -17,10 +18,7 @@ function App() {
 				<Offer />
 				<MyAdvantages />
 				<MyAdvantagesFooter />
-				<div className="app-div">KAmil</div>
-				<div className="app-div">KAmil</div>
-				<div className="app-div">KAmil</div>
-				<div className="app-div">KAmil</div>
+				<Portfolio />
 				<div className="app-div">KAmil</div>
 			</main>
 		</>
