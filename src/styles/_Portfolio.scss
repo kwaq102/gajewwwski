@@ -160,6 +160,7 @@
 @media (min-width: map-get($breakpoints, xl)) {
 	.portfolio {
 		margin: 0;
+		padding: 5em 0;
 	}
 
 	.portfolio__box {
@@ -172,7 +173,7 @@
 
 	.portfolio__links {
 		position: relative;
-		height: 500px;
+		height: 600px;
 		width: 60%;
 	}
 
