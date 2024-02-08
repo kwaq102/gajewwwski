@@ -1,15 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface Props {
 	textBtn: string;
 	href: string;
+	nameClass?: string;
 }
 
-const ButtonLink = ({ textBtn, href }: Props) => {
+const ButtonLink = ({ textBtn, href, nameClass }: Props) => {
 	return (
-		<NavLink to={href} className="btn">
+		<Link to={href} className={`btn ${nameClass}`}>
 			{textBtn}
-		</NavLink>
+		</Link>
 	);
 };
 

@@ -25,7 +25,7 @@ const Portfolio = () => {
 	return (
 		<section className="portfolio">
 			<div className="portfolio__box">
-				<Fade cascade damping={0.3} triggerOnce direction="left">
+				<Fade cascade damping={0.3} triggerOnce direction={"right"}>
 					<div className="portfolio__content">
 						<HeadingSection
 							title="Moje realizacje"

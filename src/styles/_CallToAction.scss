@@ -1,0 +1,102 @@
+.call-to-action {
+	padding: 5em 0;
+	background-image: url("../img/mountains-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.call-to-action__box {
+	padding: 0 1em;
+}
+
+.call-to-action__title {
+	display: inline-block;
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: linear-gradient(
+		to right,
+		$primaryColorLighter,
+		$primaryColor 20%,
+		$primaryColorLighter 40%,
+		$primaryColorBolder 60%,
+		$primaryColorLighter 90%
+	);
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animationText 10s linear infinite;
+}
+
+@keyframes animationText {
+	to {
+		background-position: 200% center;
+	}
+}
+
+// TODO ustawić mixina z stylami tekstu i dodać na stronie +dodać mixima z padingami i też to ogarnąć
+.call-to-action__text {
+	margin: 3em 0;
+	font-size: 1.4rem;
+	line-height: 200%;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+.call-to-action__button {
+	width: 200px;
+}
+
+@media (min-width: map-get($breakpoints, s)) {
+	.call-to-action__title {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: map-get($breakpoints, m)) {
+	.call-to-action__title {
+		font-size: 3rem;
+	}
+
+	.call-to-action__box {
+		padding: 0 4em;
+	}
+
+	.call-to-action__text {
+		font-size: 1.6rem;
+	}
+}
+
+@media (min-width: map-get($breakpoints, l)) {
+	.call-to-action__title {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.call-to-action__box {
+		width: $width-content;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.call-to-action__title {
+		width: 100%;
+		font-size: 5rem;
+		text-align: center;
+	}
+
+	.call-to-action__text {
+		flex-basis: 60%;
+		font-size: 1.8rem;
+	}
+
+	.call-to-action__button {
+		align-self: center;
+	}
+}

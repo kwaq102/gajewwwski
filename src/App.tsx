@@ -1,4 +1,5 @@
 import About from "./layout/About";
+import CallToAction from "./layout/CallToAction";
 import Header from "./layout/Header";
 import Motto from "./layout/Motto";
 import MyAdvantages from "./layout/MyAdvantages";
@@ -19,6 +20,7 @@ function App() {
 				<MyAdvantages />
 				<MyAdvantagesFooter />
 				<Portfolio />
+				<CallToAction />
 				<div className="app-div">KAmil</div>
 			</main>
 		</>
