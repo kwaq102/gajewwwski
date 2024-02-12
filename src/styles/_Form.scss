@@ -1,0 +1,60 @@
+.form {
+	margin: 5em 0;
+}
+
+.form__label {
+	display: block;
+	width: 90%;
+	margin: 1em auto;
+}
+
+.form__input {
+	width: 100%;
+	padding: 1.5em 1em;
+	background-color: $bg-color;
+	font-size: 1.4rem;
+	border: none;
+	border-radius: 5px;
+	border-left: 3px solid $primaryColorLighter;
+	transition: box-shadow 0.3s ease-in-out;
+
+	&:focus {
+		outline: none;
+		box-shadow: 2px 2px 5px -1px $border-box-color;
+		color: $secondColorText;
+	}
+}
+
+.message-box {
+	min-height: 200px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.form__error-text {
+	margin-top: 5px;
+	padding-left: 1em;
+	font-size: 1rem;
+	font-style: italic;
+	color: #ff0000c5;
+	visibility: hidden;
+}
+
+@media (min-width: map-get($breakpoints, m)) {
+	.form {
+		width: 70%;
+		margin: 5em auto;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.form {
+		width: 100%;
+		margin: 5em auto;
+	}
+
+	.form__label {
+		width: 100%;
+		margin: 0;
+	}
+}

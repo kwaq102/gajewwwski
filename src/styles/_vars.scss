@@ -14,10 +14,11 @@ $width-content: 1200px;
 // colors
 $primaryColor: #025add;
 $primaryColorLighter: #0c6de0;
-$primaryColorBolder: #012d6f;
+$primaryColorBolder: #012d6f; //TODO zmienić nazwę na jakiś darker
 $hoverColor: #dd025a; //zminić nazwę na "przeciwstawny, przeciwny" ?
 $bg-color: #f8f8f8;
 $border-box-color: #bdbdbd;
+$secondColorText: #212529;
 
 $blueGradient: linear-gradient(45deg, $primaryColor, $primaryColorLighter);
 $blueGradientSecond: linear-gradient(

@@ -1,0 +1,139 @@
+.contact {
+	@include paddingContent();
+	background-color: #fff;
+}
+
+// DETAILS
+
+.contact__details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact__details__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.7em;
+	margin: 3em 0;
+
+	&:last-child {
+		.contact__details__text {
+			border: none;
+			text-align: center;
+			color: #aaa;
+			font-size: 1.4rem;
+
+			span {
+				display: block;
+			}
+		}
+	}
+}
+
+.contact__details__icon {
+	margin-bottom: 0.5em;
+	font-size: 3rem;
+	color: $primaryColor;
+}
+
+.contact__details__box__title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+}
+
+.contact__details__text {
+	padding-bottom: 5px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: $primaryColorLighter;
+	border-bottom: 1px dotted $hoverColor;
+}
+
+@media (min-width: map-get($breakpoints, m)) {
+	.contact {
+	}
+	.contact__details {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0 10em;
+	}
+
+	.contact__details__box {
+		margin: 5em 0;
+	}
+
+	.contact__title {
+		width: 100%;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.contact {
+	}
+
+	.contact__container {
+		@include widthContent();
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	.contact__details {
+		width: 30%;
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.contact__title {
+		text-align: left;
+
+		&::after {
+			margin: 10px 0 0 0;
+		}
+	}
+
+	.contact__details__box {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-template-areas:
+			"icon title"
+			"icon description";
+		gap: 0;
+		margin: 2em 0;
+
+		&:last-child {
+			.contact__details__text {
+				text-align: left;
+			}
+		}
+	}
+
+	.contact__details__icon {
+		grid-area: icon;
+		width: 40px;
+		margin: 0 0.6em 0 0;
+		font-size: 4rem;
+		text-align: center;
+	}
+
+	.contact__details__box__title {
+		grid-area: title;
+		font-size: 1.6rem;
+	}
+
+	.contact__details__text {
+		grid-area: description;
+		font-size: 1.4rem;
+	}
+
+	.contact__form-box {
+		width: 60%;
+	}
+}

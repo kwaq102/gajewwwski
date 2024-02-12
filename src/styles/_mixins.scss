@@ -29,3 +29,7 @@
 	max-width: $width-content;
 	margin: 0 auto;
 }
+
+@mixin paddingContent() {
+	padding: 5em 0;
+}
