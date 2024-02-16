@@ -1,0 +1,108 @@
+.footer {
+	background-color: $secondColorText;
+	color: #fff;
+}
+
+.footer__container {
+	height: 500px;
+}
+
+.footer__waves-box {
+	width: 100%;
+	height: 180px;
+	position: relative;
+	overflow: hidden;
+}
+
+.footer__waves-waves {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 150px;
+	background-color: $primaryColor;
+	box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+
+.footer__waves-waves::before,
+.footer__waves-waves::after {
+	content: "";
+	position: absolute;
+	width: 350vw;
+	height: 350vw;
+	top: -70vw;
+	left: 50%;
+	transform: translate(-50%, -75%);
+	pointer-events: none;
+}
+
+.footer__waves-waves::before {
+	border-radius: 45%;
+	background: $primaryColorLighter;
+	animation: waves 10s linear infinite;
+}
+
+.footer__waves-waves::after {
+	border-radius: 35%;
+	background: $secondColorText;
+	animation: waves 15s linear infinite;
+}
+
+@keyframes waves {
+	0% {
+		transform: translate(-50%, -75%) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(-50%, -75%) rotate(360deg);
+	}
+}
+
+@media (min-width: map-get($breakpoints,s)) {
+	.footer__waves-box {
+		height: 180px;
+	}
+
+	.footer__waves-waves {
+		height: 200px;
+	}
+}
+
+@media (min-width: map-get($breakpoints,m)) {
+	.footer__waves-box {
+		height: 200px;
+	}
+
+	.footer__waves-waves {
+		height: 220px;
+	}
+
+	.footer__waves-waves::before,
+	.footer__waves-waves::after {
+		width: 350vw;
+		height: 350vw;
+		top: -75vw;
+	}
+}
+
+@media (min-width: map-get($breakpoints,l)) {
+	.footer__waves-box {
+		height: 230px;
+	}
+
+	.footer__waves-waves {
+		height: 260px;
+	}
+
+	.footer__waves-waves::before,
+	.footer__waves-waves::after {
+		width: 300vw;
+		height: 300vw;
+		top: -65vw;
+	}
+
+	.footer__waves-waves::after {
+		border-radius: 45%;
+	}
+}

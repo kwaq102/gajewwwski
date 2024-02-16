@@ -1,6 +1,7 @@
 import About from "./layout/About";
 import CallToAction from "./layout/CallToAction";
 import Contact from "./layout/Contact";
+import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import Motto from "./layout/Motto";
 import MyAdvantages from "./layout/MyAdvantages";
@@ -23,7 +24,7 @@ function App() {
 				<Portfolio />
 				<CallToAction />
 				<Contact />
-				<div className="app-div">KAmil</div>
+				<Footer />
 			</main>
 		</>
 	);
