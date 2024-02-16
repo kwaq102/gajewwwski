@@ -40,6 +40,11 @@
 	visibility: hidden;
 }
 
+.form__btn {
+	width: 200px;
+	margin-left: 5%;
+}
+
 @media (min-width: map-get($breakpoints, m)) {
 	.form {
 		width: 70%;
@@ -55,6 +60,10 @@
 
 	.form__label {
 		width: 100%;
+		margin: 0;
+	}
+
+	.form__btn {
 		margin: 0;
 	}
 }

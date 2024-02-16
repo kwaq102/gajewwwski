@@ -61,6 +61,9 @@ const Form = () => {
 				/>
 				<p className="form__error-text">Ewentualny błąd</p>
 			</label>
+			<button className="form__btn btn" type="submit">
+				Wyślij
+			</button>
 		</form>
 	);
 };
