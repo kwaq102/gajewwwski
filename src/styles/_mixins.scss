@@ -30,10 +30,6 @@
 	margin: 0 auto;
 }
 
-@mixin paddingContent() {
-	padding: 5em 0;
-}
-
 @mixin text() {
 	font-size: 1.4rem;
 	line-height: 200%;
@@ -57,3 +53,15 @@
 od 770 w szerokości 4em paddingi
 padding w szerokości na 0 dać od xxl
 */
+
+@mixin paddingBox() {
+	padding: 5em 2em;
+
+	@media (min-width: map-get($breakpoints, l)) {
+		padding: 5em 4em;
+	}
+
+	@media (min-width: map-get($breakpoints, xxl)) {
+		padding: 5em 0;
+	}
+}

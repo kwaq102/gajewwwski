@@ -1,5 +1,5 @@
 .about__content {
-	padding: 0 2em 0;
+	@include paddingBox();
 }
 
 .about__title {

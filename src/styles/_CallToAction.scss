@@ -1,5 +1,5 @@
 .call-to-action {
-	padding: 5em 0;
+	@include paddingBox();
 	background-image: url("../img/mountains-bg.jpg");
 	background-size: cover;
 	background-position: center;
@@ -37,7 +37,8 @@
 	}
 }
 
-// TODO ustawić mixina z stylami tekstu i dodać na stronie +dodać mixima z padingami i też to ogarnąć
+// TODO ustawić mixina z stylami tekstu
+
 .call-to-action__text {
 	@include text();
 	margin: 3em 0;

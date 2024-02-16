@@ -1,10 +1,10 @@
 .motto {
-	padding-top: 2em;
+	@include paddingBox();
 }
 
 .motto__box {
 	position: relative;
-	padding: 5em 1em;
+	padding-top: 5em;
 }
 
 .motto__text {

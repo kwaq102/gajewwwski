@@ -1,5 +1,5 @@
 .offer {
-	padding-bottom: 3em;
+	@include paddingBox();
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
