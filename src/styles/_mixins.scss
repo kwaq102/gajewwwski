@@ -33,3 +33,27 @@
 @mixin paddingContent() {
 	padding: 5em 0;
 }
+
+@mixin text() {
+	font-size: 1.4rem;
+	line-height: 200%;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+
+@mixin bottomLineInNavigation() {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	max-width: 100%;
+	background: $hoverColor;
+	transition: 0.3s all ease-in-out;
+}
+
+/*
+od 770 w szerokości 4em paddingi
+padding w szerokości na 0 dać od xxl
+*/

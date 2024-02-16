@@ -55,8 +55,6 @@
 }
 
 @media (min-width: map-get($breakpoints, m)) {
-	.contact {
-	}
 	.contact__details {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -74,9 +72,6 @@
 }
 
 @media (min-width: map-get($breakpoints, xl)) {
-	.contact {
-	}
-
 	.contact__container {
 		@include widthContent();
 		display: flex;

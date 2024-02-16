@@ -39,11 +39,8 @@
 
 // TODO ustawić mixina z stylami tekstu i dodać na stronie +dodać mixima z padingami i też to ogarnąć
 .call-to-action__text {
+	@include text();
 	margin: 3em 0;
-	font-size: 1.4rem;
-	line-height: 200%;
-	letter-spacing: 0.5px;
-	color: #fff;
 }
 
 .call-to-action__button {
