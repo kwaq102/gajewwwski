@@ -31,13 +31,13 @@
 	max-width: 100%;
 }
 
-.form__error-text {
+.form__error__text {
 	margin-top: 5px;
+	margin-bottom: 10px;
 	padding-left: 1em;
 	font-size: 1rem;
 	font-style: italic;
 	color: #ff0000c5;
-	visibility: hidden;
 }
 
 .form__btn {
