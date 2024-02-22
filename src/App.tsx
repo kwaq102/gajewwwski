@@ -1,31 +1,27 @@
-import About from "./layout/About";
-import CallToAction from "./layout/CallToAction";
-import Contact from "./layout/Contact";
-import Footer from "./layout/Footer";
-import Header from "./layout/Header";
-import Motto from "./layout/Motto";
-import MyAdvantages from "./layout/MyAdvantages";
-import MyAdvantagesFooter from "./layout/MyAdvantagesFooter";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Navigation from "./layout/Navigation";
-import Offer from "./layout/Offer";
-import Portfolio from "./layout/Portfolio";
+import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
+import Footer from "./layout/Footer";
+import OfferPage from "./pages/OfferPage";
+import ContactPage from "./pages/ContactPage";
+import PortfolioPage from "./pages/PortfolioPage";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
 	return (
 		<>
 			<Navigation />
-			<Header />
-			<main className="main">
-				<Motto />
-				<About />
-				<Offer />
-				<MyAdvantages />
-				<MyAdvantagesFooter />
-				<Portfolio />
-				<CallToAction />
-				<Contact />
-				<Footer />
-			</main>
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/o-mnie" element={<AboutPage />} />
+				<Route path="/oferta" element={<OfferPage />} />
+				<Route path="/portfolio" element={<PortfolioPage />} />
+				<Route path="/kontakt" element={<ContactPage />} />
+				<Route path="*" element={<ErrorPage />} />
+			</Routes>
+			<Footer />
 		</>
 	);
 }
