@@ -50,7 +50,7 @@ const Header = () => {
 							<div className="box-buttons">
 								<Fade direction="up" cascade damping={0.2} triggerOnce>
 									<ButtonLink textBtn="Skontaktuj się" href="#" />
-									<ButtonLink textBtn="Dowiedz się więcej" href="#" />
+									<ButtonLink textBtn="Portfolio" href="#" />
 								</Fade>
 							</div>
 						</Fade>

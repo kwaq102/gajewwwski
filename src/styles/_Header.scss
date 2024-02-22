@@ -2,7 +2,7 @@
 	position: relative;
 	height: 100vh;
 	background-image: url("../img/header/bg-header-min.jpg");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	overflow: hidden;
@@ -10,7 +10,7 @@
 
 .header-box {
 	position: absolute;
-	top: 40%;
+	top: 310px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
@@ -75,6 +75,7 @@
 
 .box-buttons {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 2em;
 	gap: 1rem;
@@ -92,6 +93,16 @@
 @media (min-width: map-get($breakpoints, s)) {
 	.header {
 		background-size: cover;
+	}
+
+	.header-box {
+		top: 40%;
+	}
+}
+
+@media (min-height: 700px) {
+	.header-box {
+		top: 50%;
 	}
 }
 
