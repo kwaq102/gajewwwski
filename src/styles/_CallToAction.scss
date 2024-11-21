@@ -1,11 +1,26 @@
 .call-to-action {
 	@include paddingBox();
-	background-image: url("../img/mountains-bg.jpg");
+	position: relative;
+	background-image: url("../img/mountains_w600.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	z-index: 1;
+
+	// TODO zastanowić się czy to potdrzebne, jak tak to zmienić domyślne tło bg.
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
 }
+
 .call-to-action__box {
 	padding: 0 1em;
 }
@@ -37,24 +52,30 @@
 	}
 }
 
-// TODO ustawić mixina z stylami tekstu
-
 .call-to-action__text {
 	@include text();
-	margin: 3em 0;
+	margin: 1.5em 0;
 }
 
 .call-to-action__button {
-	width: 200px;
+	width: 100%;
 }
 
 @media (min-width: map-get($breakpoints, s)) {
 	.call-to-action__title {
 		font-size: 2.5rem;
 	}
+
+	.call-to-action__button {
+		width: fit-content;
+	}
 }
 
 @media (min-width: map-get($breakpoints, m)) {
+	.call-to-action {
+		background-image: url("../img/mountains.jpg");
+	}
+
 	.call-to-action__title {
 		font-size: 3rem;
 	}

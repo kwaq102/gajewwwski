@@ -1,0 +1,32 @@
+.AboutPage__about {
+}
+
+.AboutPage__about__box {
+	@include paddingBox();
+}
+
+.dark-bg {
+	background-color: $secondColorText;
+	color: #fff;
+	.AboutPage__about__box__description__text {
+		color: $lightColorText;
+	}
+}
+
+.AboutPage__about__box__description {
+	margin: 2em 0;
+}
+
+.AboutPage__about__box__description__text {
+	@include text();
+	color: #000;
+}
+
+.AboutPage__about__box__img {
+	width: 100%;
+	margin: 2em 0;
+}
+
+.AboutPage__btn {
+	margin: 2em 0;
+}

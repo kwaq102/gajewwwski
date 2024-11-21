@@ -1,7 +1,7 @@
 // breakpoints
 $breakpoints: (
 	s: 500px,
-	m: 770px,
+	m: 765px,
 	l: 900px,
 	xl: 1200px,
 	xxl: 1400px,
@@ -18,7 +18,8 @@ $primaryColorBolder: #012d6f; //TODO zmienić nazwę na jakiś darker
 $hoverColor: #dd025a; //zminić nazwę na "przeciwstawny, przeciwny" ?
 $bg-color: #f8f8f8;
 $border-box-color: #bdbdbd;
-$secondColorText: #212529;
+$lightColorText: #f8f8f8; //TODO zmienić w projekcie kolory na zmienne
+$secondColorText: #212529; //TODO tutaj zmienić na darkColorText i pozmieniać w projekcie
 
 $blueGradient: linear-gradient(45deg, $primaryColor, $primaryColorLighter);
 $blueGradientSecond: linear-gradient(

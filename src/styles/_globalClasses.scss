@@ -21,3 +21,17 @@
 .heading-section {
 	@include headingSection();
 }
+
+.heading-h2 {
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+
+	span {
+		color: $primaryColorLighter;
+	}
+
+	@media (min-width: map-get($breakpoints, l)) {
+		font-size: 2.4rem;
+	}
+}

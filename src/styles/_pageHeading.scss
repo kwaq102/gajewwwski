@@ -1,0 +1,121 @@
+.HeaderPage {
+	@include paddingBox();
+	position: relative;
+	padding-top: 13em;
+	// background-image: url("../../src/img/bg-blue.jpg");
+	background-image: url("../../src/img/bg-blue_mobile.jpg");
+	background-position: center;
+	// TODO drapacze hmur mogąfajnie wyglądać jak
+	// https://demo.templatemonster.com/pl/demo/301213.html
+	background-attachment: fixed;
+	z-index: 1;
+
+	&__bg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+}
+
+.HeaderPage__title {
+	margin-bottom: 10px;
+	font-size: 5rem;
+	font-weight: 500;
+	color: $primaryColor;
+	text-shadow: $textShadowBlack;
+}
+
+.HeaderPage__short-description {
+	@include text();
+	margin-bottom: 2em;
+	line-height: 160%;
+	font-size: 1.5rem;
+	color: #f8f8f8;
+}
+
+.HeaderPage__page-nav__list {
+	display: flex;
+	gap: 10px;
+}
+
+.HeaderPage__page-nav {
+	margin-bottom: 2em;
+}
+
+.HeaderPage__page-nav__list {
+	list-style: none;
+}
+
+.HeaderPage__page-nav__item {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #f8f8f8;
+	letter-spacing: -1px;
+
+	&:nth-child(1) {
+		.HeaderPage__page-nav__link {
+			color: $hoverColor;
+			text-decoration: none;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		&::after {
+			content: "";
+			margin-left: 10px;
+			color: $primaryColorLighter;
+		}
+	}
+}
+
+.HeaderPage__photo {
+	display: block;
+	width: 100%;
+	padding: 40px;
+	background-color: $bg-color;
+}
+
+@media (min-width: 600px) {
+	.HeaderPage {
+		padding-bottom: 10em;
+	}
+
+	.HeaderPage__wrapper {
+		position: relative;
+	}
+
+	.HeaderPage__photo {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		// bottom: -200px;
+		// right: -100px;
+		width: 260px;
+	}
+}
+
+@media (min-width: map-get($breakpoints, m)) {
+	.HeaderPage {
+		background-image: url("../../src/img/bg-blue.jpg");
+	}
+	.HeaderPage__short-description {
+		width: 70%;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.HeaderPage__wrapper {
+		@include widthContent;
+	}
+
+	.HeaderPage__short-description {
+		width: 60%;
+	}
+}
