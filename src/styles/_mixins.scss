@@ -35,6 +35,10 @@
 	line-height: 200%;
 	letter-spacing: 0.5px;
 	color: #fff;
+
+	@media (min-width: map-get($breakpoints, l)) {
+		font-size: 1.6rem;
+	}
 }
 
 @mixin bottomLineInNavigation() {
@@ -49,19 +53,14 @@
 	transition: 0.3s all ease-in-out;
 }
 
-/*
-od 770 w szerokości 4em paddingi
-padding w szerokości na 0 dać od xxl
-*/
-
 @mixin paddingBox() {
-	padding: 5em 2em;
+	padding: 6em 2em;
 
 	@media (min-width: map-get($breakpoints, l)) {
-		padding: 5em 4em;
+		padding: 7em 4em;
 	}
 
 	@media (min-width: map-get($breakpoints, xxl)) {
-		padding: 5em 0;
+		padding: 8em 0;
 	}
 }

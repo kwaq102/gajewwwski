@@ -1,0 +1,131 @@
+h3 {
+	margin-bottom: 0.5em;
+}
+
+.timeline {
+	width: 80vw;
+	max-width: 34.15em;
+	margin: 5em auto 0 auto;
+}
+
+.timelineElement {
+	position: relative;
+	width: 100%;
+	max-width: 34em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 0;
+	padding-right: 0;
+	transform: none;
+	border: none;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 3px;
+		height: 4em;
+		top: -2em;
+		left: 50%;
+		transform: translateX(-50%);
+		background: $border-box-color;
+	}
+}
+
+.timelineElement__box {
+	border: 2px solid $border-box-color;
+	border-radius: 1em;
+	padding: 2em;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background: #fff;
+		box-shadow: 0 0 10px $primaryColorBolder;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		top: -0.5em;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.timelineElement__heading {
+	font-size: 1.8rem;
+}
+
+.timelineElement__description {
+	font-size: 1.4rem;
+	line-height: 2.5rem;
+}
+
+/* RWD */
+
+@media (min-width: 1150px) {
+	.timeline {
+		width: 100vw;
+	}
+
+	.timelineElement__box {
+		width: 400px;
+
+		&::before {
+			left: auto;
+		}
+	}
+
+	.timelineElement:nth-child(odd) {
+		border-left: 3px solid $border-box-color;
+		padding-left: 3em;
+		transform: translateX(17em) !important;
+	}
+
+	.timelineElement:nth-child(even) {
+		border-right: 3px solid $border-box-color;
+		padding-right: 3em;
+		transform: translateX(calc(-17em + 3px)) !important;
+	}
+
+	.timelineElement:nth-child(odd)::before,
+	.timelineElement:nth-child(even)::before {
+		content: "";
+		background: $border-box-color;
+		width: 3em;
+		height: 3px;
+		position: absolute;
+		top: 50%;
+		left: auto;
+		transform: translateY(-50%);
+	}
+
+	.timelineElement:nth-child(odd)::before {
+		left: 0;
+	}
+
+	.timelineElement:nth-child(even)::before {
+		right: 0;
+	}
+
+	.timelineElement:nth-child(odd) .timelineElement__box::before,
+	.timelineElement:nth-child(even) .timelineElement__box::before {
+		content: "";
+		background: #fff;
+		box-shadow: 0 0 0.5em #0d71fc;
+		width: 0.8em;
+		height: 0.8em;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		border-radius: 50%;
+	}
+
+	.timelineElement:nth-child(odd) .timelineElement__box::before {
+		left: -0.5em;
+	}
+	.timelineElement:nth-child(even) .timelineElement__box::before {
+		right: -0.5em;
+	}
+	.timelineElement:nth-child(even) .timelineElement__box {
+		transform: translateX(-97px);
+	}
+}

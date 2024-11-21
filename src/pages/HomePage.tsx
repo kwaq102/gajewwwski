@@ -20,7 +20,14 @@ const HomePage = () => {
 			<MyAdvantages />
 			<MyAdvantagesFooter />
 			<Portfolio />
-			<CallToAction />
+			<CallToAction
+				title="Twoja przygoda zaczyna się tutaj!"
+				description="Miło mi, że zainteresowałeś się moją stroną! To tylko wierzchołek góry
+				lodowej, bo najważniejsze jest to, że teraz Ty możesz stworzyć swoją
+				własną wyjątkową stronę internetową! Niech Twoja historia zacznie się
+				właśnie tutaj. Napisz do mnie już dziś, abyśmy mogli razem zrealizować
+				Twoje pomysły i stworzyć coś wyjątkowego!"
+			/>
 			<Contact />
 		</main>
 	);
