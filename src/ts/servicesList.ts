@@ -1,6 +1,6 @@
 import webSite from '../img/developer_w1280.jpg'
 import host from '../img/cloud_w1280.jpg'
-// import seoImg from '../img/laptop-7669027_1280.jpg';
+// import seoImg from '../img/laptop-7669027_1280.jpg'; //TODO zastanowić się na tągrafiką
 import seoImg from '../img/seo_w1280.jpg';
 import adminImg from '../img/admin_w1280.jpg';
 import designImg from '../img/design_w1280.jpg';
@@ -8,7 +8,7 @@ import designImg from '../img/design_w1280.jpg';
 export const servicesList = [
     {
         img: webSite,
-        imgAlt: "title photo",
+        imgAlt: "Komputer z otwrtym edytorem do tworzenia stron www",
         title: "Strony internetowe",
         subTitle: "Każda strona jest jak nowa przygoda",
         services: [
@@ -20,7 +20,7 @@ export const servicesList = [
 
     {
         img: host,
-        imgAlt: "Rozwiązania hostingowe",
+        imgAlt: "Chmura symbolizująca chmurę jako przestrzeń na dane w sieci",
         title: "Rozwiązania hostingowe",
         subTitle: "Bezpieczne schronienie dla Twojej strony ",
         services: [
@@ -33,7 +33,7 @@ export const servicesList = [
 
     {
         img: seoImg,
-        imgAlt: "",
+        imgAlt: "Grafika z napisem seo, czyli skrót od Search Engine Optimization",
         title: "Optymalizacja SEO",
         subTitle: "Optymalizacja SEO to klucz do królestwa widoczności",
         // subTitle: "Twój sukces w internecie zaczyna się od dobrego SEO",
@@ -49,7 +49,7 @@ export const servicesList = [
 
     {
         img: adminImg,
-        imgAlt: "",
+        imgAlt: "Pulpit z logowaniem dla administratora",
         title: "Administracja strony",
         subTitle: "Utrzymuj swoją stronę w dobrej formie",
         services: [
@@ -62,7 +62,7 @@ export const servicesList = [
 
     {
         img: designImg,
-        imgAlt: "",
+        imgAlt: "Grafika z napisem design",
         title: "Web Design",
         subTitle: "Zaprojektuj swój wirtualny świat",
         services: [

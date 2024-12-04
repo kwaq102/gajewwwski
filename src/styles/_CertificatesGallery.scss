@@ -1,0 +1,13 @@
+.certificate__img {
+	width: 100%;
+	max-width: 300px;
+	margin: 1em;
+	transition: transform 0.2s ease-in;
+
+	&:hover {
+		transform: scale(0.95);
+	}
+}
+
+@media (min-width: map-get($breakpoints, s)) {
+}

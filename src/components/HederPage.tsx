@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 interface Props {
 	title: string;
 	description: string;
-	photo?: string;
 }
 
-const HeaderPage = ({ title, description, photo }: Props) => {
+const HeaderPage = ({ title, description }: Props) => {
 	return (
 		<header className="HeaderPage">
 			<div className="HeaderPage__wrapper">
@@ -24,7 +23,6 @@ const HeaderPage = ({ title, description, photo }: Props) => {
 						</li>
 					</ul>
 				</nav>
-				{photo && <img src={photo} alt="" className="HeaderPage__photo" />}
 			</div>
 			<div className="HeaderPage__bg"></div>
 		</header>

@@ -1,6 +1,6 @@
 @mixin headingSection() {
 	margin: 1em 0;
-	font-size: 2rem;
+	font-size: 2.6rem;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	width: 100%;
@@ -17,11 +17,11 @@
 	}
 
 	@media (min-width: map-get($breakpoints, l)) {
-		font-size: 2.5rem;
+		font-size: 2.8rem;
 	}
 
 	@media (min-width: map-get($breakpoints, xl)) {
-		font-size: 3rem;
+		font-size: 3.2rem;
 	}
 }
 
