@@ -10,7 +10,6 @@ const OfferPage = () => {
 			<HeaderPage
 				title="Oferta"
 				description="Nowoczesne, responsywne strony internetowe, zgodne z najlepszymi standardami. Kompleksowa obsługa – od projektowania, przez administrację, po aktualizacje i zabezpieczenia. Właściwe treści SEO i optymalizacja grafik zapewnią skuteczność w sieci."
-				// photo={aboutImg}
 			/>
 
 			<section className="offer__wrapper">

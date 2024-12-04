@@ -1,6 +1,6 @@
 import webSite from '../img/developer_w1280.jpg'
 import host from '../img/cloud_w1280.jpg'
-// import seoImg from '../img/laptop-7669027_1280.jpg';
+// import seoImg from '../img/laptop-7669027_1280.jpg'; //TODO zastanowić się na tągrafiką
 import seoImg from '../img/seo_w1280.jpg';
 import adminImg from '../img/admin_w1280.jpg';
 import designImg from '../img/design_w1280.jpg';

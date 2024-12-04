@@ -8,6 +8,7 @@
 	color: #000;
 }
 
+// TODO dać to do mixima może bo użwam tego podobnie w aboutpage
 .offer__services-description {
 	width: 90%;
 	max-width: 700px;
@@ -20,6 +21,9 @@
 }
 
 .offer__heading {
+	width: fit-content;
+	margin: 0 auto 1em auto;
+
 	&::after {
 		content: "";
 		display: block;
@@ -28,10 +32,6 @@
 		margin: 15px 0 0 0;
 		background-color: $hoverColor;
 	}
-}
-
-.offer__text {
-	margin: 3em 0;
 }
 
 // SERVICES BOX
@@ -81,13 +81,13 @@
 	@include widthContent;
 }
 
-.offer__heading {
-	width: fit-content;
-	margin: 0 auto 2em auto;
-}
-
 // RWD
 @media (min-width: map-get($breakpoints, m)) {
+	.offer__heading {
+		&::after {
+			margin: 15px auto 0 auto;
+		}
+	}
 	.offer__services-description {
 		padding: 6em 4em;
 	}

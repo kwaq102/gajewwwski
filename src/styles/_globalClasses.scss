@@ -23,7 +23,7 @@
 }
 
 .heading-h2 {
-	font-size: 2.2rem;
+	font-size: 2.4rem;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 
@@ -32,6 +32,19 @@
 	}
 
 	@media (min-width: map-get($breakpoints, l)) {
-		font-size: 2.4rem;
+		font-size: 3rem;
+	}
+}
+
+.heading-h3 {
+	font-size: 2rem;
+	text-transform: uppercase;
+
+	span {
+		color: $primaryColorLighter;
+	}
+
+	@media (min-width: map-get($breakpoints, l)) {
+		font-size: 2.2rem;
 	}
 }
