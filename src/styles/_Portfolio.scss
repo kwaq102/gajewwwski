@@ -1,5 +1,5 @@
 .portfolio__content {
-	margin: 5em 1em;
+	@include paddingBox();
 }
 
 .portfolio__content__title {

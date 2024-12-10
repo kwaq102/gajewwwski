@@ -1,0 +1,249 @@
+.about__box {
+	@include paddingBox;
+}
+
+.dark-bg {
+	background-color: $secondColorText;
+	color: #fff;
+
+	.about__box__description__text {
+		color: $lightColorText;
+	}
+}
+
+.about__box__entry {
+	// width: 90%;
+	max-width: 1200px;
+	position: relative;
+	margin: -7em auto 5em auto;
+	padding: 4em 2em;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px -10px $secondColorText;
+	z-index: 1;
+
+	.about__box__description__text {
+		font-size: 1.4rem;
+		margin-bottom: 2em;
+	}
+}
+
+.about__box__description {
+	margin: 2em 0;
+}
+
+.about__box__description__text {
+	@include text();
+	color: #000;
+}
+
+.about__box__img {
+	width: 100%;
+	margin: 2em 0;
+}
+
+.about__values {
+	display: flex;
+	flex-direction: column;
+}
+
+.about__values__list {
+	margin-top: 3em;
+	list-style: none;
+}
+
+.about__values__list-item {
+	@include text;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: repeat(2, auto);
+	grid-column-gap: 40px;
+	align-items: center;
+	margin: 1em 0;
+	padding: 1em;
+	color: #000;
+
+	svg {
+		grid-area: 1 / 1 / 2 / 2;
+		width: 30px;
+		height: 30px;
+		color: $hoverColor;
+	}
+}
+
+.about__values__list-item__heading {
+	grid-area: 1 / 2 / 2 / 3;
+	margin: 0.5em 0;
+}
+
+.about__values__list-item__description {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.about__heading,
+.about__description {
+	@include widthContent;
+	text-align: center;
+}
+
+.about__heading {
+	width: fit-content;
+	margin: 0 auto 1em auto;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 35px;
+		height: 1px;
+		margin: 15px auto 0 auto;
+		background-color: $hoverColor;
+	}
+}
+
+.about__description {
+	@include text;
+	margin: 1em auto 2em auto;
+	color: $border-box-color;
+	text-transform: uppercase;
+}
+
+.about__whyMe__card__wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+
+.about__box__certificates {
+	@include widthContent;
+	text-align: center;
+}
+
+@media (min-width: map-get($breakpoints, s)) {
+	.about__box__entry {
+		padding: 6em 4em;
+	}
+}
+
+@media (min-width: map-get($breakpoints, m)) {
+}
+
+@media (min-width: map-get($breakpoints, l)) {
+	.about__box__entry {
+		margin-top: -10em;
+
+		.about__box__entry__wrapper {
+			display: flex;
+			gap: 5em;
+			padding: 5em 2em;
+
+			.about__box__description {
+				width: 50%;
+				align-self: center;
+
+				.about__box__description__text {
+					font-size: 1.6rem;
+				}
+			}
+
+			.about__box__wrapper-img {
+				width: 50%;
+			}
+		}
+	}
+
+	.about__box__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: row-reverse;
+
+		&:nth-child(2n) {
+			flex-direction: row;
+		}
+	}
+
+	.about__box__wrapper__content {
+		width: 50%;
+		align-self: center;
+		padding: 0 2em;
+	}
+
+	.about__box__description__text {
+		font-size: 1.4rem;
+	}
+
+	.about__box__wrapper__img {
+		width: 50%;
+	}
+
+	.about__box__img {
+		height: 100%;
+		margin: 0;
+	}
+
+	.about__values__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin-top: 5em;
+	}
+
+	.about__values__list-item {
+		width: 50%;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.about__box__entry {
+		.about__box__entry__wrapper {
+			display: flex;
+			gap: 5em;
+			padding: 5em 2em;
+
+			.about__box__description {
+				width: 40%;
+			}
+
+			.about__box__wrapper-img {
+				width: 60%;
+			}
+		}
+	}
+
+	.about__description {
+		width: 50%;
+	}
+
+	.about__box__wrapper {
+		@include widthContent;
+	}
+
+	.about__box__wrapper__content {
+		width: 40%;
+	}
+
+	.marginTop {
+		margin-top: 100px;
+	}
+
+	.about__box__wrapper__img {
+		position: relative;
+		margin-top: -150px;
+		margin-right: auto;
+		margin-left: -50px;
+		width: 50%;
+	}
+
+	.about__box__wrapper__img.bottom-right-attached {
+		margin-top: auto;
+		margin-left: auto;
+		margin-bottom: -150px;
+		margin-right: -50px;
+	}
+
+	.about__box__values {
+		@include widthContent;
+		margin: 5em auto;
+	}
+}

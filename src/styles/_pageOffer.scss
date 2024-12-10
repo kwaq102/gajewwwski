@@ -1,0 +1,147 @@
+.offer__wrapper {
+	padding: 5em 0;
+}
+
+.offer__text {
+	@include text;
+	padding: 2em 0;
+	color: #000;
+}
+
+// TODO dać to do mixima może bo użwam tego podobnie w aboutpage
+.offer__services-description {
+	width: 90%;
+	max-width: 700px;
+	position: relative;
+	margin: -7em auto 5em auto;
+	padding: 6em 4em;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px -10px $secondColorText;
+	z-index: 1;
+}
+
+.offer__heading {
+	width: fit-content;
+	margin: 0 auto 1em auto;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 35px;
+		height: 1px;
+		margin: 15px 0 0 0;
+		background-color: $hoverColor;
+	}
+}
+
+// SERVICES BOX
+
+.offer__service-box {
+	background-color: $secondColorText;
+}
+
+.offer__service__content {
+	@include paddingBox;
+	color: $lightColorText;
+}
+
+.service__heading {
+	margin: 2em 0;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+
+	span {
+		display: block;
+		font-size: 0.5em;
+		font-style: italic;
+		letter-spacing: 0;
+		color: #bdbdbd;
+	}
+}
+
+.service__list {
+	margin: 2em 0;
+	font-size: 1.4rem;
+	list-style: none;
+}
+
+.service__list__element {
+	margin: 0.5em 0;
+	text-align: justify;
+}
+
+.offer__service__img {
+	display: block;
+	width: 100%;
+}
+
+.offer__cooperation {
+	@include paddingBox;
+	@include widthContent;
+}
+
+// RWD
+@media (min-width: map-get($breakpoints, m)) {
+	.offer__heading {
+		&::after {
+			margin: 15px auto 0 auto;
+		}
+	}
+	.offer__services-description {
+		padding: 6em 4em;
+	}
+
+	.offer__btn {
+		width: 300px;
+	}
+
+	.offer__service__content {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.service__heading {
+		font-size: 2.4rem;
+	}
+
+	.service__list {
+		font-size: 1.6rem;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xl)) {
+	.offer__services-description {
+		margin: -100px auto 10em auto;
+		z-index: 1;
+	}
+
+	.offer__service-box {
+		display: flex;
+		align-items: center;
+
+		&:nth-child(2n) {
+			flex-direction: row-reverse;
+
+			.offer__service__content {
+				padding-right: 5em;
+				padding-left: 20%;
+			}
+		}
+	}
+
+	.offer__service__img-box {
+		width: 50%;
+	}
+
+	.offer__service__content {
+		width: 50%;
+		margin: 0 auto;
+		padding-left: 5em;
+		padding-right: 20%;
+	}
+
+	.service__list {
+		margin: 0;
+	}
+}
