@@ -25,6 +25,7 @@
 	}
 }
 
+// TODO to width content od razu ustawić od jakieś warości moze
 @mixin widthContent() {
 	max-width: $width-content;
 	margin: 0 auto;

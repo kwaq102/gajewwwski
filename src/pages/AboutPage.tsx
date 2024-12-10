@@ -47,9 +47,6 @@ const AboutPage = () => {
 		/>
 	));
 
-	// https://daweb.studio/nasza-historia/
-	// https://www.lavora.pl/o-nas/
-
 	return (
 		<div className="aboutPage page">
 			<HeaderPage
@@ -223,6 +220,7 @@ const AboutPage = () => {
 					<h2 className="about__heading heading-h2">
 						Moje <span>certyfikaty</span>
 					</h2>
+					{/* TODO przy certyfikatach moze podzielić ekran na pół i dodać jakis opis  */}
 					<div className="about__box__certificates">
 						<CertificatesGallery />
 					</div>
