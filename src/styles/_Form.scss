@@ -8,6 +8,20 @@
 	margin: 1em auto;
 }
 
+.form__label__checkbox {
+	.form__checkbox {
+		float: left;
+		margin: 0 5px 0 0;
+	}
+
+	.form__checkbox__text {
+		a {
+			color: black;
+			text-decoration: none;
+		}
+	}
+}
+
 .form__input {
 	width: 100%;
 	padding: 1.5em 1em;
@@ -43,6 +57,20 @@
 .form__btn {
 	width: 200px;
 	margin-left: 5%;
+}
+
+// TODO style, jakiś popup na wiadmość
+
+.success-info {
+	display: none;
+}
+
+.success-info__success {
+	display: block;
+}
+
+.success-info__failed {
+	display: block;
 }
 
 @media (min-width: map-get($breakpoints, m)) {
