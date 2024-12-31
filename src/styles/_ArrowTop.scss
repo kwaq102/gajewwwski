@@ -1,0 +1,63 @@
+.arrow-top {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	z-index: 6;
+	opacity: 0.7;
+}
+
+.arrow-top__box {
+	position: relative;
+	background: $hoverColor;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+
+	&::after {
+		@include centerByPosition;
+		content: "";
+		transform-origin: 0 0;
+		width: 100%;
+		height: 100%;
+		background: $hoverColor;
+		border-radius: 50%;
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		&::after {
+			animation: zoomIn 3s infinite;
+		}
+	}
+}
+
+.fa.fa-angle-up {
+	@include centerByPosition;
+	font-size: 20px;
+	z-index: 2;
+	color: white;
+}
+
+@keyframes zoomIn {
+	0% {
+		opacity: 0;
+		transform: scale3d(1.4, 1.4, 1.4) translate(-50%, -50%);
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+// RWD
+@media (min-width: map-get($breakpoints, m)) {
+	.arrow-top {
+		bottom: 30px;
+		right: 30px;
+	}
+}
