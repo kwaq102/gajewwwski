@@ -27,7 +27,7 @@ const Contact = () => {
 							On-Line <span>Pracuję zdalnie</span>
 						</p>
 					</div>
-					{/* <div>social media</div> */}
+					{/* TODO <div>social media</div> */}
 				</div>
 
 				<div className="contact__form-box">

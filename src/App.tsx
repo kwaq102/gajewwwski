@@ -1,4 +1,7 @@
 import { Route, Routes } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "./redux/store/store";
+
 import Navigation from "./layout/Navigation";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
@@ -7,10 +10,26 @@ import OfferPage from "./pages/OfferPage";
 import ContactPage from "./pages/ContactPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ErrorPage from "./pages/ErrorPage";
+import { hiddenMenu } from "./redux/features/menuSlice";
 
 function App() {
+	const menu = useSelector((state: RootState) => state.menu.value);
+	const dispatch = useDispatch();
+
 	return (
-		<>
+		<div
+			className="wrapperContext"
+			onClick={e => {
+				const target = e.target as HTMLElement;
+				if (menu) {
+					console.log(target.classList.contains("show-nav"));
+
+					if (!target.classList.contains("show-nav")) {
+						dispatch(hiddenMenu());
+					}
+				}
+			}}
+		>
 			<Navigation />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
@@ -21,7 +40,7 @@ function App() {
 				<Route path="*" element={<ErrorPage />} />
 			</Routes>
 			<Footer />
-		</>
+		</div>
 	);
 }
 
