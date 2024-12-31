@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ErrorPage from "./pages/ErrorPage";
 import { hiddenMenu } from "./redux/features/menuSlice";
+import ArrowTop from "./components/ArrowTop";
 
 function App() {
 	const menu = useSelector((state: RootState) => state.menu.value);
@@ -30,6 +31,7 @@ function App() {
 				}
 			}}
 		>
+			<ArrowTop />
 			<Navigation />
 			<Routes>
 				<Route path="/" element={<HomePage />} />

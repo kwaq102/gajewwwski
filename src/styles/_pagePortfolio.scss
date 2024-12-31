@@ -80,6 +80,7 @@
 				transform: translateX(-0);
 				opacity: 1;
 			}
+
 			p {
 				transform: translateX(0);
 				opacity: 1;
@@ -99,6 +100,7 @@
 		flex-wrap: wrap;
 	}
 }
+
 @media (min-width: map-get($breakpoints, xl)) {
 	.portfolio__wrapper {
 		@include widthContent;

@@ -1,5 +1,3 @@
-import React from "react";
-
 import Header from "../layout/Header";
 import About from "../layout/About";
 import CallToAction from "../layout/CallToAction";
