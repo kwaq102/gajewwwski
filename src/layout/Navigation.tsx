@@ -11,6 +11,12 @@ const Navigation = () => {
 	const menu = useSelector((state: RootState) => state.menu.value);
 	const dispatch = useDispatch();
 
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+		});
+	};
+
 	const navigation = navList.map(el => (
 		<li key={el.navName} className="main-nav__item">
 			<NavLink
@@ -19,6 +25,7 @@ const Navigation = () => {
 				className="main-nav__link"
 				onClick={() => {
 					dispatch(hiddenMenu());
+					scrollToTop();
 				}}
 			>
 				{el.navName}

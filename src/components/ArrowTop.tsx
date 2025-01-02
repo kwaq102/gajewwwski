@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { handleArrow } from "../redux/features/arrowSlice";
 import { RootState } from "../redux/store/store";
+import { scrollToTop } from "../ts/scrollTop";
 
 const ArrowTop = () => {
 	const isVisible = useSelector(
@@ -24,13 +25,6 @@ const ArrowTop = () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, [dispatch]);
-
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
 
 	return (
 		<>
