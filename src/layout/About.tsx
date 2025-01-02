@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import HeadingSection from "../components/HeadingSection";
+import { scrollToTop } from "../ts/scrollTop";
 
 const About = () => {
 	return (
@@ -23,9 +24,13 @@ const About = () => {
 							<span className="fa-solid fa-envelopes-bulk"></span>
 						</div>
 						<div className="about__content__link-box_content">
-							<NavLink to="/oferta" className="about__content__link-box_title">
+							<Link
+								to="/oferta"
+								className="about__content__link-box_title"
+								onClick={scrollToTop}
+							>
 								Sprawdź ofertę
-							</NavLink>
+							</Link>
 							<p className="about__content__link-box_text">
 								Zapewniając niezawodne usługi, pomagam Ci zaznaczyć swoją
 								obecność w nieograniczonym świecie cyfrowym.
@@ -37,12 +42,13 @@ const About = () => {
 							<span className="fa-solid fa-file-code"></span>
 						</div>
 						<div className="about__content__link-box_content">
-							<NavLink
+							<Link
 								to="/portfolio"
 								className="about__content__link-box_title"
+								onClick={scrollToTop}
 							>
 								Moje projekty
-							</NavLink>
+							</Link>
 							<p className="about__content__link-box_text">
 								Moje portfolio to zbiór efektywnych i kreatywnych rozwiązań,
 								odzwierciedlających moje zróżnicowane doświadczenie.

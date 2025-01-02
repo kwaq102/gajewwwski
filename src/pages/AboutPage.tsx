@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import HeaderPage from "../components/HederPage";
-import ButtonLink from "../components/ButtonLink";
+import { Element, Link } from "react-scroll";
 
+import HeaderPage from "../components/HederPage";
 import Card from "../components/Card";
 import { whyMeList } from "../ts/whyMeList";
 
@@ -88,15 +88,22 @@ const AboutPage = () => {
 										kształcenie pozwala mi być na bieżąco z najnowszymi trendami
 										i technologiami.
 									</p>
-									<ButtonLink
-										href="/o-mnie/certyfikaty"
-										nameClass="AboutPage__btn"
-										textBtn="Moje certyfikaty"
-									/>
+									<Link
+										to="certyfikaty"
+										smooth={true}
+										duration={500}
+										className="AboutPage__btn btn"
+									>
+										Moje certyfikaty
+									</Link>
 								</div>
 
 								<div className="about__box__wrapper-img">
-									<img src={learningImg} alt="" className="about__box__img" />
+									<img
+										src={learningImg}
+										alt="Strzałka skierowana w górę na wykresie przedstawiającym postęp w samorozwoju zawodowym"
+										className="about__box__img"
+									/>
 								</div>
 							</div>
 						</div>
@@ -119,7 +126,7 @@ const AboutPage = () => {
 							<div className="about__box__wrapper__img">
 								<img
 									src={isMobile ? webImg : webImg2}
-									alt=""
+									alt="Włączona żarówka, symbolizująca pomysł i rozwiązanie problemu"
 									className="about__box__img"
 								/>
 							</div>
@@ -144,7 +151,7 @@ const AboutPage = () => {
 							<div className="about__box__wrapper__img bottom-right-attached">
 								<img
 									src={isMobile ? coopImg : coopImg2}
-									alt=""
+									alt="Uścisk dłoni jako symbol porozumienia i skutecznej współpracy biznesowej"
 									className="about__box__img"
 								/>
 							</div>
@@ -234,16 +241,17 @@ const AboutPage = () => {
 						<div className="about__whyMe__card__wrapper">{cards}</div>
 					</div>
 
-					<div className="about__box">
-						<h2 className="about__heading heading-h2">
-							Moje <span>certyfikaty</span>
-						</h2>
-						{/* TODO przy certyfikatach moze podzielić ekran na pół i dodać jakis opis  */}
-						<div className="about__box__certificates">
-							<CertificatesGallery />
+					<Element name="certyfikaty">
+						<div className="about__box">
+							<h2 className="about__heading heading-h2">
+								Moje <span>certyfikaty</span>
+							</h2>
+							{/* TODO przy certyfikatach moze podzielić ekran na pół i dodać jakis opis  */}
+							<div className="about__box__certificates">
+								<CertificatesGallery />
+							</div>
 						</div>
-					</div>
-
+					</Element>
 					<div>POMYŚLEĆ TU O JAKIEJŚ CALL TO ACTION</div>
 				</section>
 			</div>

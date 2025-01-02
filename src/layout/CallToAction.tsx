@@ -12,7 +12,7 @@ const CallToAction = ({ title, description }: Props) => {
 				<h3 className="call-to-action__title">{title}</h3>
 				<p className="call-to-action__text">{description}</p>
 				<ButtonLink
-					href="/contact"
+					href="/kontakt"
 					textBtn="Skontaktuj się!"
 					nameClass="call-to-action__button"
 				/>

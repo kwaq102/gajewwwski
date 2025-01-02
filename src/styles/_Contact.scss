@@ -54,6 +54,10 @@
 	border-bottom: 1px dotted $hoverColor;
 }
 
+.contact__details__link {
+	text-decoration: none;
+}
+
 @media (min-width: map-get($breakpoints, m)) {
 	.contact__details {
 		flex-direction: row;
