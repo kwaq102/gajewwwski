@@ -8,10 +8,11 @@ import MyAdvantages from "../layout/MyAdvantages";
 import MyAdvantagesFooter from "../layout/MyAdvantagesFooter";
 import Offer from "../layout/Offer";
 import Portfolio from "../layout/Portfolio";
+import { Fade } from "react-awesome-reveal";
 
 const HomePage = () => {
 	return (
-		<>
+		<Fade>
 			<Helmet>
 				<title>Tworzenie Stron Internetowych | gajewwwski.net</title>
 				<meta
@@ -50,7 +51,7 @@ const HomePage = () => {
 				/>
 				<Contact />
 			</main>
-		</>
+		</Fade>
 	);
 };
 

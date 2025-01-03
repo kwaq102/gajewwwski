@@ -1,10 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import HeaderPage from "../components/HederPage";
 import Contact from "../layout/Contact";
+import { Fade } from "react-awesome-reveal";
 
 const ContactPage = () => {
 	return (
-		<>
+		<Fade>
 			<Helmet>
 				<title>Kontakt - Skontaktuj się ze mną | gajewwwski.net</title>
 				<meta
@@ -35,7 +36,7 @@ const ContactPage = () => {
 					{/* TODO moze tutaj dajć najczęściej zadawane pytania */}
 				</div>
 			</div>
-		</>
+		</Fade>
 	);
 };
 

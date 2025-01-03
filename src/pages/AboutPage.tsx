@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Element, Link } from "react-scroll";
+import { Fade } from "react-awesome-reveal";
 
 import HeaderPage from "../components/HederPage";
 import Card from "../components/Card";
@@ -46,7 +47,7 @@ const AboutPage = () => {
 	));
 
 	return (
-		<>
+		<Fade duration={500}>
 			<Helmet>
 				<title>O mnie - Tworzenie stron internetowych | gajewwwski.net</title>
 				<meta
@@ -66,6 +67,7 @@ const AboutPage = () => {
 				<meta property="og:url" content="https://gajewwwski.net/o-mnie" />
 				<meta property="og:type" content="website" />
 			</Helmet>
+
 			<div className="aboutPage page">
 				<HeaderPage
 					title="O mnie"
@@ -255,7 +257,7 @@ const AboutPage = () => {
 					<div>POMYŚLEĆ TU O JAKIEJŚ CALL TO ACTION</div>
 				</section>
 			</div>
-		</>
+		</Fade>
 	);
 };
 

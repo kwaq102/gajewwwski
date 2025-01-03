@@ -4,10 +4,11 @@ import HeaderPage from "../components/HederPage";
 import ServiceBox from "../components/ServiceBox";
 import Timeline from "../components/Timeline/TimeLine";
 import CallToAction from "../layout/CallToAction";
+import { Fade } from "react-awesome-reveal";
 
 const OfferPage = () => {
 	return (
-		<>
+		<Fade>
 			<Helmet>
 				<title>Oferta - Usługi Webowe | gajewwwski.net</title>
 				<meta
@@ -75,7 +76,7 @@ const OfferPage = () => {
 				sieci."
 				/>
 			</div>
-		</>
+		</Fade>
 	);
 };
 

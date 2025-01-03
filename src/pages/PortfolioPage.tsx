@@ -5,9 +5,10 @@ import CardPortfolio from "../components/CardPortfolio";
 // TODO ogarnąć portfolio
 import img1 from "../img/portfolio/vertical/aaa.jpg";
 import img2 from "../img/portfolio/vertical/bbb.jpg";
+import { Fade } from "react-awesome-reveal";
 const PortfolioPage = () => {
 	return (
-		<>
+		<Fade>
 			<Helmet>
 				<title>
 					Portfolio - Tworzenie stron internetowych | gajewwwski.net
@@ -49,7 +50,7 @@ const PortfolioPage = () => {
 					/>
 				</section>
 			</div>
-		</>
+		</Fade>
 	);
 };
 

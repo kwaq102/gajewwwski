@@ -1,6 +1,7 @@
 import React, { FormEvent, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Loading from "./Loading";
 
 const Form = () => {
 	const REGEX = /^[0-9a-z_.-]+@[0-9a-z.-]+\.[a-z]{2,3}$/i;
@@ -89,34 +90,35 @@ const Form = () => {
 			errorsMessage.checked
 		) {
 			console.log("jesteśmy w błędzie");
-
 			return;
-		} else {
-			try {
-				const response = await axios.post(
-					"http://localhost/contact/contact.php",
+		}
 
-					{
-						email: form.email,
-						name: form.name,
-						message: form.message,
-					}
-				);
-				setLoading(true);
+		setLoading(true);
 
-				if (response.status !== 200) {
-					console.log(response);
-					console.error("Nie można wysłać wiadomosći");
-				} else {
-					setSuccess(true);
-					setLoading(false);
-					clearForm();
+		try {
+			const response = await axios.post(
+				"http://localhost/contact/contact.php",
+
+				{
+					email: form.email,
+					name: form.name,
+					message: form.message,
 				}
-			} catch (e) {
-				setFailed(true);
-				setLoading(false);
+			);
+			console.log(response);
+
+			if (response.status !== 200) {
+				console.log(response);
 				console.error("Nie można wysłać wiadomosći");
+			} else {
+				setSuccess(true);
+				clearForm();
 			}
+		} catch (e) {
+			setFailed(true);
+			console.error("Nie można wysłać wiadomosći");
+		} finally {
+			setLoading(false);
 		}
 	};
 
@@ -137,8 +139,10 @@ const Form = () => {
 			checked: "",
 		});
 	};
+
 	return (
 		<>
+			{loading && <Loading />}
 			<form onSubmit={sendForm} className="form">
 				<label className="form__label">
 					<input
@@ -204,6 +208,7 @@ const Form = () => {
 					Wyślij
 				</button>
 			</form>
+
 			<p
 				className={`success-info 
 					${success && "success-info__success"} 
