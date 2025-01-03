@@ -2,6 +2,7 @@ import { Fade } from "react-awesome-reveal";
 import ButtonLink from "../components/ButtonLink";
 import Particles from "../components/Particles";
 import { useTypingEffect } from "../ts/typing";
+import Socials from "../components/Socials";
 
 const Header = () => {
 	const text = [
@@ -34,15 +35,7 @@ const Header = () => {
 							<p className="header-text header-typing">{textToTyping}</p>
 
 							<div className="socials">
-								<a href="https://www.facebook.com/gajewwwski.net">
-									<span className="fab fa-facebook-f"></span>
-								</a>
-								<a href="https://www.linkedin.com/in/kg-kamil-gajewski">
-									<span className="fab fa-linkedin-in"></span>
-								</a>
-								<a href="https://github.com/kwaq102">
-									<span className="fab fa-github"></span>
-								</a>
+								<Socials />
 							</div>
 
 							<div className="box-buttons">
