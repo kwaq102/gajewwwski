@@ -1,5 +1,3 @@
-import React from "react";
-
 import HeadingSection from "../components/HeadingSection";
 import Form from "../components/Form";
 
@@ -13,7 +11,12 @@ const Contact = () => {
 					<div className="contact__details__box">
 						<span className="fa-solid fa-mobile-screen contact__details__icon"></span>
 						<h5 className="contact__details__box__title">Numer telefonu</h5>
-						<p className="contact__details__text">+48 452 199 552</p>
+						<a
+							className="contact__details__text contact__details__link"
+							href="tel:+48452199552"
+						>
+							+48 452 199 552
+						</a>
 					</div>
 					<div className="contact__details__box">
 						<span className="fa-regular fa-envelope contact__details__icon"></span>

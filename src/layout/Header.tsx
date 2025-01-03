@@ -33,26 +33,22 @@ const Header = () => {
 							</p>
 							<p className="header-text header-typing">{textToTyping}</p>
 
-							{/* TODO dodać adresy */}
 							<div className="socials">
-								<a href="#">
+								<a href="https://www.facebook.com/gajewwwski.net">
 									<span className="fab fa-facebook-f"></span>
 								</a>
-								<a href="#">
+								<a href="https://www.linkedin.com/in/kg-kamil-gajewski">
 									<span className="fab fa-linkedin-in"></span>
 								</a>
-								<a href="#">
+								<a href="https://github.com/kwaq102">
 									<span className="fab fa-github"></span>
-								</a>
-								<a href="#">
-									<span className="fa-solid fa-link"></span>
 								</a>
 							</div>
 
 							<div className="box-buttons">
 								<Fade direction="up" cascade damping={0.2} triggerOnce>
-									<ButtonLink textBtn="Skontaktuj się" href="#" />
-									<ButtonLink textBtn="Portfolio" href="#" />
+									<ButtonLink textBtn="Skontaktuj się" href="/kontakt" />
+									<ButtonLink textBtn="Portfolio" href="/portfolio" />
 								</Fade>
 							</div>
 						</Fade>

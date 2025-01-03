@@ -1,5 +1,3 @@
-import React from "react";
-
 import OfferElement from "../components/OfferElement";
 import { offerList } from "../ts/offerList";
 import HeadingSection from "../components/HeadingSection";

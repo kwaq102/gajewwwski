@@ -7,6 +7,7 @@ const Footer = () => {
 
 	const navigation = navList.map(el => (
 		<li key={el.navName} className="footer__nav__element">
+			{/* TODO zastaowić się czy po kliknięciu w element nawigacji ma mnie scrolować na górę strony... jak tak to dodać funkję... jak nie to olać temat */}
 			<NavLink to={el.path} end={el.end} className="footer__nav__link">
 				{el.navName}
 			</NavLink>

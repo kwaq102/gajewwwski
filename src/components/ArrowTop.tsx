@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { handleArrow } from "../redux/features/arrowSlice";
 import { RootState } from "../redux/store/store";
+import { scrollToTopSmooth } from "../ts/scrollTop";
 
 const ArrowTop = () => {
 	const isVisible = useSelector(
@@ -25,17 +26,10 @@ const ArrowTop = () => {
 		};
 	}, [dispatch]);
 
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	};
-
 	return (
 		<>
 			{isVisible && (
-				<div className="arrow-top" onClick={scrollToTop}>
+				<div className="arrow-top" onClick={scrollToTopSmooth}>
 					<div className="arrow-top__box">
 						<i className="fa fa-angle-up"></i>
 					</div>
