@@ -1,5 +1,3 @@
-import HeaderPage from "./HederPage";
-
 const Loading = () => {
 	return (
 		<div className="wrapper-loader">

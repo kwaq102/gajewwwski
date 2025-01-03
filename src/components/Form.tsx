@@ -2,6 +2,7 @@ import React, { FormEvent, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loading from "./Loading";
+import FormStatus from "./FormStatus";
 
 const Form = () => {
 	const REGEX = /^[0-9a-z_.-]+@[0-9a-z.-]+\.[a-z]{2,3}$/i;
@@ -23,22 +24,25 @@ const Form = () => {
 	const [success, setSuccess] = useState(false);
 	const [failed, setFailed] = useState(false);
 	const [loading, setLoading] = useState(false);
+	const [status, setStatus] = useState(false);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setSuccess(false);
+			setStatus(false);
 		}, 6000);
 
 		return () => clearInterval(timer);
-	}, [success]);
+	}, [success, status]);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setFailed(false);
+			setStatus(false);
 		}, 6000);
 
 		return () => clearInterval(timer);
-	}, [failed]);
+	}, [failed, status]);
 
 	const updateForm = (key: string, value: string | boolean) => {
 		cleanErrorsMessage();
@@ -119,6 +123,7 @@ const Form = () => {
 			console.error("Nie można wysłać wiadomosći");
 		} finally {
 			setLoading(false);
+			setStatus(true);
 		}
 	};
 
@@ -209,15 +214,7 @@ const Form = () => {
 				</button>
 			</form>
 
-			<p
-				className={`success-info 
-					${success && "success-info__success"} 
-					${failed && "success-info__failed"}`}
-			>
-				{success &&
-					"Twoja wiadomość została wysłana. Odpowiem najszybciej jak to możliwe. :)"}
-				{failed && "Coś poszło nie tak... spróbuj ponownie."}
-			</p>
+			{status && <FormStatus failed={failed} success={success} />}
 		</>
 	);
 };

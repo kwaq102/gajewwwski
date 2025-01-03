@@ -1,0 +1,41 @@
+.formStatus__wrapper {
+	@include centerByPosition;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 6;
+}
+
+.success-info {
+	@include text;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 150px;
+	padding: 2em;
+	background-color: $bg-color;
+	border: 1px solid $border-box-color;
+	border-radius: 30px;
+	text-align: center;
+
+	&__success {
+		color: green;
+
+		p {
+			color: black;
+		}
+	}
+
+	&__failed {
+		color: red;
+
+		p {
+			color: black;
+		}
+	}
+}
