@@ -1,13 +1,8 @@
 import LightGallery from "lightgallery/react";
 
-// Import stylów
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
-
-// Wtyczki opcjonalne
-// import lgZoom from "lightgallery/plugins/zoom";
-// import lgThumbnail from "lightgallery/plugins/thumbnail";
 
 import cer1 from "../../img/Certificates/cer1.jpg";
 import cer2 from "../../img/Certificates/cer2.jpg";
@@ -17,16 +12,8 @@ import cer5 from "../../img/Certificates/cer5.jpg";
 import cer6 from "../../img/Certificates/cer6.jpg";
 
 const CertificatesGallery = () => {
-	const onInit = () => {
-		console.log("LightGallery initialized");
-	};
-
 	return (
-		<LightGallery
-			onInit={onInit}
-			// plugins={[lgZoom, lgThumbnail]} // Typy automatycznie sprawdzane!
-			speed={500}
-		>
+		<LightGallery speed={500}>
 			<a href={cer1}>
 				<img
 					src={cer1}

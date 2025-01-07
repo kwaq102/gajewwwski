@@ -27,9 +27,8 @@ const Header = () => {
 								<br />
 								Strony internetowe <strong>gajewwwski.pl</strong>
 							</h1>
-							{/* TODO tekst do zmiany */}
 							<p className="header-text">
-								Strony internetowe tworzone z pasją! Wprowadź swoją markę do
+								Strony internetowe tworzone z pasją! Wprowadź swoją firmę do
 								cyfrowego świata i odkryj potencjał online już dziś!
 							</p>
 							<p className="header-text header-typing">{textToTyping}</p>

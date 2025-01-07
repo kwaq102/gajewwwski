@@ -32,9 +32,9 @@ const HomePage = () => {
 				<meta property="og:url" content="https://gajewwwski.net" />
 				<meta property="og:type" content="website" />
 			</Helmet>
+			<Header />
 
 			<main className="main">
-				<Header />
 				<Motto />
 				<About />
 				<Offer />

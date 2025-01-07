@@ -50,12 +50,21 @@
 .main-nav__logo {
 	align-self: center;
 	font-size: 1.5rem;
-	color: $primaryColor;
 	font-style: italic;
 	font-weight: 700;
-	text-shadow: $textShadowBlack;
-	transition: color 0.5s;
+
+	a {
+		color: $primaryColor;
+		text-shadow: $textShadowBlack;
+		text-decoration: none;
+		transition: color 0.5s;
+	}
+
+	.logo-white {
+		color: white;
+	}
 }
+
 .main-nav__item {
 	list-style: none;
 
@@ -63,6 +72,7 @@
 		margin-top: 6em;
 	}
 }
+
 .main-nav__link {
 	display: block;
 	padding: 0.5rem;
@@ -87,16 +97,11 @@
 }
 
 /* BURGER */
-// TODO może to wywalić do osobnego pliku
 
 .main-nav__btn {
 	position: absolute;
 	right: 10px;
 	top: 50%;
-	// transform: translateY(-50%);
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
 	width: 40px;
 	height: 40px;
 	cursor: pointer;

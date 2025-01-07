@@ -2,11 +2,8 @@
 	@include paddingBox();
 	position: relative;
 	padding-top: 13em;
-	// background-image: url("../../src/img/bg-blue.jpg");
 	background-image: url("../../src/img/bg-blue_mobile.jpg");
 	background-position: center;
-	// TODO drapacze hmur mogąfajnie wyglądać jak
-	// https://demo.templatemonster.com/pl/demo/301213.html
 	background-attachment: fixed;
 	z-index: 1;
 
@@ -67,7 +64,7 @@
 		}
 
 		&::after {
-			content: "";
+			content: "/";
 			margin-left: 10px;
 			color: $primaryColorLighter;
 		}
@@ -95,8 +92,6 @@
 		top: 50%;
 		right: 0;
 		transform: translateY(-50%);
-		// bottom: -200px;
-		// right: -100px;
 		width: 260px;
 	}
 }

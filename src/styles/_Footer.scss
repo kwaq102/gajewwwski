@@ -99,6 +99,11 @@
 	transition: background-color 0.1s linear, border 0.1s linear;
 	cursor: pointer;
 
+	.footer__contact__social-link {
+		text-decoration: none;
+		color: #fff;
+	}
+
 	span {
 		height: 100%;
 		display: flex;

@@ -1,12 +1,15 @@
-import React from "react";
-
 import photo from "../img/image-advantages.png";
-import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import HeadingSection from "../components/HeadingSection";
 import { Fade } from "react-awesome-reveal";
-// TODO pomyśleć nad zmianą zdjęcia.
 
 const MyAdvantages = () => {
+	const navigate = useNavigate();
+
+	const scrollToCertificates = () => {
+		navigate("/o-mnie", { state: { scrollTo: "certificates" } });
+	};
+
 	return (
 		<section className="myAdvantages">
 			<HeadingSection
@@ -23,12 +26,12 @@ const MyAdvantages = () => {
 							<p>
 								Odbyłem wiele renomowanych kursów. Uczyłem się od najlepszych,
 								co pozwala mi świadczyć usługi na najwyższym poziomie.
-								<NavLink
-									to="/certyfikaty"
+								<a
 									className="advantage-item__certificates"
+									onClick={scrollToCertificates}
 								>
 									Moje certyfikaty.
-								</NavLink>
+								</a>
 							</p>
 						</li>
 						<li className="myAdvantages__box-first__advantage advantage-item">
@@ -54,8 +57,6 @@ const MyAdvantages = () => {
 			<div className="myAdvantages__box-mid">
 				<img src={photo} alt="photo" className="myAdvantages__box-mid__image" />
 			</div>
-
-			{/* TODO pomyśleć nad zmianą iconek na jakieś kolorowe np.z pixabay'a */}
 
 			<div className="myAdvantages__box-second">
 				<ul className="myAdvantages__box-second__advantages advantages">

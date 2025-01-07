@@ -1,6 +1,5 @@
 import webSite from '../img/developer_w1280.jpg'
 import host from '../img/cloud_w1280.jpg'
-// import seoImg from '../img/laptop-7669027_1280.jpg'; //TODO zastanowić się na tągrafiką
 import seoImg from '../img/seo_w1280.jpg';
 import adminImg from '../img/admin_w1280.jpg';
 import designImg from '../img/design_w1280.jpg';
@@ -22,7 +21,7 @@ export const servicesList = [
         img: host,
         imgAlt: "Chmura symbolizująca chmurę jako przestrzeń na dane w sieci",
         title: "Rozwiązania hostingowe",
-        subTitle: "Bezpieczne schronienie dla Twojej strony ",
+        subTitle: "Bezpieczne schronienie dla Twojej strony",
         services: [
             "Doradztwo w wyborze i rejestracji domeny, aby znaleźć idealną nazwę dla Twojej marki.",
             "Wybór odpowiedniego hostingu zgodnego z Twoimi potrzebami.",
@@ -35,9 +34,7 @@ export const servicesList = [
         img: seoImg,
         imgAlt: "Grafika z napisem seo, czyli skrót od Search Engine Optimization",
         title: "Optymalizacja SEO",
-        subTitle: "Optymalizacja SEO to klucz do królestwa widoczności",
-        // subTitle: "Twój sukces w internecie zaczyna się od dobrego SEO",
-        // TODO przemyśleć ten subTitle
+        subTitle: "Bez optymalizacji SEO strona internetowa jest jak igła w stogu cyfrowego siana",
         services: [
             "Tworzenie stron www przyjaznych wyszukiwarkom, co zwiększa ich widoczność.",
             "Stosowanie najnowszych standardów oraz odpowiednich znaczników semantycznych dla lepszej indeksacji",

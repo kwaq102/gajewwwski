@@ -2,13 +2,10 @@
 	width: 100%;
 	max-width: 400px;
 	padding-bottom: 5em;
-	// margin: 5em 2em;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	// box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	background-color: #fff;
-
 	transition: transform 0.2s ease-in-out;
 
 	.card__img__wrapper {
@@ -48,6 +45,5 @@
 
 	&:hover {
 		transform: translateY(-5px);
-		// box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 	}
 }
