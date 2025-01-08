@@ -7,7 +7,6 @@ const Footer = () => {
 
 	const navigation = navList.map(el => (
 		<li key={el.navName} className="footer__nav__element">
-			{/* TODO zastaowić się czy po kliknięciu w element nawigacji ma mnie scrolować na górę strony... jak tak to dodać funkję... jak nie to olać temat */}
 			<NavLink to={el.path} end={el.end} className="footer__nav__link">
 				{el.navName}
 			</NavLink>
@@ -50,21 +49,36 @@ const Footer = () => {
 						</div>
 						<div className="footer__contact__socials">
 							<div className="footer__contact__social-box">
-								<span className="fa-brands fa-facebook-f"></span>
+								<a
+									href="https://www.facebook.com/gajewwwski.net"
+									className="footer__contact__social-link"
+								>
+									<span className="fa-brands fa-facebook-f"></span>
+								</a>
 							</div>
 							<div className="footer__contact__social-box">
-								<span className="fa-brands fa-linkedin-in"></span>
+								<a
+									href="https://www.linkedin.com/in/kg-kamil-gajewski"
+									className="footer__contact__social-link"
+								>
+									<span className="fa-brands fa-linkedin-in"></span>
+								</a>
 							</div>
 
 							<div className="footer__contact__social-box">
-								<span className="fa-brands fa-github"></span>
+								<a
+									href="https://github.com/kwaq102"
+									className="footer__contact__social-link"
+								>
+									<span className="fa-brands fa-github"></span>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="footer__copyright">
 					<p className="footer__copyright-text">
-						© {year} gajewwwski.pl Wszelkie prawa zastrzeżone
+						© {year} gajewwwski.net Wszelkie prawa zastrzeżone
 					</p>
 					<Link
 						to={"./polityka-prywatnosci"}

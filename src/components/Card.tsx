@@ -1,5 +1,3 @@
-import ButtonLink from "./ButtonLink";
-
 interface Props {
 	title: string;
 	description: string;
@@ -16,13 +14,6 @@ const WhyMeCard = ({ title, description, img, imgAlt }: Props) => {
 			<div className="card__content">
 				<h3 className="card__heading heading-h3">{title}</h3>
 				<p className="card__descriptiopn">{description}</p>
-				{/* TODO */}
-				{/* <ButtonLink href="/oferta" textBtn="Sprawdź ofertę" /> */}
-				{/* <ButtonLink
-					href="/kontakt"
-					textBtn="Skontaktuj się!"
-					nameClass="card__btn"
-				/> */}
 			</div>
 		</div>
 	);

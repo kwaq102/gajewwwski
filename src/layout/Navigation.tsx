@@ -46,7 +46,16 @@ const Navigation = () => {
 	return (
 		<nav className={`main-nav ${bgNav && "nav-bg"}`}>
 			<div className="main-nav__logo">
-				gajewwwski<span>.pl</span>
+				<NavLink
+					to="/"
+					onClick={() => {
+						dispatch(hiddenMenu());
+						scrollToTop();
+					}}
+					className={`${bgNav && "logo-white"}`}
+				>
+					gajewwwski<span>.net</span>
+				</NavLink>
 			</div>
 
 			<ul className={`main-nav__list ${menu && "show-nav"}`}>{navigation}</ul>

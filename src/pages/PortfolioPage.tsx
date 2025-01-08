@@ -2,10 +2,12 @@ import { Helmet } from "react-helmet-async";
 import HeaderPage from "../components/HederPage";
 import CardPortfolio from "../components/CardPortfolio";
 
-// TODO ogarnąć portfolio
-import img1 from "../img/portfolio/vertical/aaa.jpg";
-import img2 from "../img/portfolio/vertical/bbb.jpg";
 import { Fade } from "react-awesome-reveal";
+
+import firstPortfolioScreen from "../img/portfolio/vertical/firstScreen.jpg";
+import secondPortfolioScreen from "../img/portfolio/vertical/secondScreen.jpg";
+import thirdPortfolioScreen from "../img/portfolio/vertical/thirdVertical.jpg";
+
 const PortfolioPage = () => {
 	return (
 		<Fade>
@@ -36,17 +38,29 @@ const PortfolioPage = () => {
 					description=" Realizacje, które przekształcają wizję w rzeczywistość dzięki nowoczesnym technologiom i kreatywnemu podejściu. Każdy projekt to historia, która zaczyna się od Twojej wizji, a kończy na funkcjonalnej stronie internetowej, która wyróżnia się w sieci."
 				/>
 				<section className="portfolio__wrapper">
-					<CardPortfolio
-						title="gdansk-adwokat.pl"
-						description="Strona internetowa"
-						link="https://gdansk-adwokat.pl/"
-						img={img1}
-					/>
+					<h2 className="portfolio__heading heading-h2">
+						Przykładowe <span>realizacje</span>
+					</h2>
+
 					<CardPortfolio
 						title="artinka.pl"
 						description="Strona internetowa"
 						link="https://artinka.pl/"
-						img={img2}
+						img={firstPortfolioScreen}
+					/>
+
+					<CardPortfolio
+						title="gdansk-adwokat.pl"
+						description="Strona internetowa"
+						link="https://gdansk-adwokat.pl/"
+						img={secondPortfolioScreen}
+					/>
+
+					<CardPortfolio
+						title="dekarz.elblag.pl"
+						description="Strona internetowa"
+						link="https://dekarz.elblag.pl/"
+						img={thirdPortfolioScreen}
 					/>
 				</section>
 			</div>

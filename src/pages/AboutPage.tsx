@@ -25,9 +25,13 @@ import Award from "../SVG/Award";
 import Area from "../SVG/Area";
 import MyValues from "../components/MyValues";
 import CertificatesGallery from "../components/Galleries/CertificatesGallery";
+import { useLocation } from "react-router-dom";
+
+//TODO Ogólnie podzielić ten komponent bo jest za wielki jak po mojemu
 
 const AboutPage = () => {
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
+	const location = useLocation();
 
 	useEffect(() => {
 		const handleResize = () => {
@@ -37,12 +41,22 @@ const AboutPage = () => {
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
-	const cards = whyMeList.map(item => (
+	useEffect(() => {
+		if (location.state?.scrollTo) {
+			const element = document.getElementById(location.state.scrollTo);
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth" });
+			}
+		}
+	}, [location.state]);
+
+	const cards = whyMeList.map((item, i) => (
 		<Card
 			title={item.title}
 			description={item.description}
 			img={item.img}
 			imgAlt={item.imgAlt}
+			key={i}
 		/>
 	));
 
@@ -244,17 +258,16 @@ const AboutPage = () => {
 					</div>
 
 					<Element name="certyfikaty">
-						<div className="about__box">
+						<div className="about__box" id="certificates">
 							<h2 className="about__heading heading-h2">
 								Moje <span>certyfikaty</span>
 							</h2>
-							{/* TODO przy certyfikatach moze podzielić ekran na pół i dodać jakis opis  */}
 							<div className="about__box__certificates">
 								<CertificatesGallery />
 							</div>
 						</div>
 					</Element>
-					<div>POMYŚLEĆ TU O JAKIEJŚ CALL TO ACTION</div>
+					{/* <div>POMYŚLEĆ TU O JAKIEJŚ CALL TO ACTION</div> */}
 				</section>
 			</div>
 		</Fade>

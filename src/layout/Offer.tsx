@@ -4,11 +4,12 @@ import HeadingSection from "../components/HeadingSection";
 import { Fade } from "react-awesome-reveal";
 
 const Offer = () => {
-	const offer = offerList.map(el => (
+	const offer = offerList.map((el, i) => (
 		<OfferElement
 			icon={el.iconClass}
 			title={el.title}
 			description={el.description}
+			key={i}
 		/>
 	));
 

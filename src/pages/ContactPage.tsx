@@ -31,9 +31,6 @@ const ContactPage = () => {
 				/>
 				<div className="ContactPage__wrapper">
 					<Contact />
-
-					{/* TODO SOCIAL MEDIA */}
-					{/* TODO moze tutaj dajć najczęściej zadawane pytania */}
 				</div>
 			</div>
 		</Fade>

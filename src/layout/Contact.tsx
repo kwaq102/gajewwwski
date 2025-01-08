@@ -1,5 +1,6 @@
 import HeadingSection from "../components/HeadingSection";
 import Form from "../components/Form";
+import Socials from "../components/Socials";
 
 const Contact = () => {
 	return (
@@ -7,7 +8,6 @@ const Contact = () => {
 			<div className="contact__container">
 				<div className="contact__details">
 					<HeadingSection title="Dane kontaktowe" nameClass="contact__title" />
-
 					<div className="contact__details__box">
 						<span className="fa-solid fa-mobile-screen contact__details__icon"></span>
 						<h5 className="contact__details__box__title">Numer telefonu</h5>
@@ -30,7 +30,9 @@ const Contact = () => {
 							On-Line <span>Pracuję zdalnie</span>
 						</p>
 					</div>
-					{/* TODO <div>social media</div> */}
+					<div className="contact__details__box__socials">
+						<Socials />
+					</div>
 				</div>
 
 				<div className="contact__form-box">

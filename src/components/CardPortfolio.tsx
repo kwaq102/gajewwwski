@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import LinkIcon from "../SVG/LinkIcon";
-import { useState } from "react";
 
 interface Props {
 	title: string;

@@ -127,6 +127,7 @@
 @media (min-width: map-get($breakpoints, l)) {
 	.portfolio {
 		margin: 0 4em;
+		padding-bottom: 7em;
 	}
 
 	.portfolio__title {
@@ -139,15 +140,15 @@
 
 	.portfolio__box {
 		display: flex;
-		align-items: center;
+		flex-direction: column;
 	}
 
 	.portfolio__content {
-		width: 30%;
+		width: 100%;
 	}
 
 	.portfolio__links {
-		width: 70%;
+		width: 100%;
 	}
 
 	.portfolio__link {
@@ -160,10 +161,12 @@
 @media (min-width: map-get($breakpoints, xl)) {
 	.portfolio {
 		margin: 0;
-		padding: 5em 0;
+		padding: 7em 0;
 	}
 
 	.portfolio__box {
+		flex-direction: row;
+		align-items: center;
 		margin-left: 10%;
 	}
 
@@ -197,11 +200,11 @@
 	}
 
 	.portfolio__link.animateOn {
-		animation: changeZIndex 0.3s ease-in-out both alternate;
+		animation: changeZIndex 0.2s linear both alternate;
 	}
 
 	.portfolio__link.animateOff {
-		animation: zIndexOff 0.3s ease-in-out;
+		animation: zIndexOff 0.2s linear;
 	}
 
 	// POSITION PHOTO-LINKS
@@ -266,6 +269,7 @@
 		z-index: 1;
 		transform: scale(1);
 	}
+
 	to {
 		z-index: 5;
 		transform: scale(1.05);
@@ -277,6 +281,7 @@
 		transform: scale(1.05);
 		z-index: 5;
 	}
+
 	to {
 		z-index: 1;
 		transform: scale(1);

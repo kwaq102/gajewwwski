@@ -1,7 +1,20 @@
 .portfolio__wrapper {
-	// width: 1200px;
-	// margin: 0 auto;
-	padding: 5em 0;
+	padding: 7em 0;
+}
+
+.portfolio__heading {
+	width: 100%;
+	margin: 0 auto 1em auto;
+	text-align: center;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 35px;
+		height: 1px;
+		margin: 15px auto 0 auto;
+		background-color: $hoverColor;
+	}
 }
 
 .portfolio__element {
@@ -12,7 +25,6 @@
 	margin: 4em auto;
 	display: flex;
 	align-items: flex-end;
-	// background-image: url("../img/portfolio/vertical/aaa.jpg");
 
 	.content {
 		position: relative;
@@ -52,7 +64,6 @@
 		a {
 			padding: 0;
 			margin: 0;
-			// color: #012d6f;
 			color: #212529;
 
 			svg {
@@ -98,6 +109,12 @@
 	.portfolio__wrapper {
 		display: flex;
 		flex-wrap: wrap;
+	}
+
+	.offer__heading {
+		&::after {
+			margin: 15px auto 0 auto;
+		}
 	}
 }
 
