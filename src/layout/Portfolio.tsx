@@ -1,18 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
-import HeadingSection from "../components/HeadingSection";
-
-import artinka from "../img/portfolio/artinka.jpg";
-import artinka2 from "../img/portfolio/artinka2.jpg";
-import kris from "../img/portfolio/kris.jpg";
-import kris2 from "../img/portfolio/kris2.jpg";
-import travel from "../img/portfolio/travel.jpg";
-import travel2 from "../img/portfolio/travel2.jpg";
-import assistant from "../img/portfolio/assistant.jpg";
-import assistant2 from "../img/portfolio/assistant2.jpg";
-import example1 from "../img/portfolio/waldek.jpg";
-import example2 from "../img/portfolio/adRespect.jpg";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
+
+import HeadingSection from "../components/HeadingSection";
+
+import firstPortfolioImg from "../img/portfolio/dekarz_w500-min.jpg";
+import artinka from "../img/portfolio/artinka_w500-min.jpg";
+import kris from "../img/portfolio/kris.jpg";
+import travel from "../img/portfolio/travel.jpg";
+import assistant from "../img/portfolio/assistant.jpg";
+import fourthPortfolioImg from "../img/portfolio/waldek.jpg";
 
 const Portfolio = () => {
 	const [firstAnimation, setFirstAnimation] = useState(false);
@@ -57,17 +54,18 @@ const Portfolio = () => {
 						>
 							<img
 								src={artinka}
-								alt="Screen ze strony artinka.pl"
+								alt="Zdjecie strony internetowej artinka.pl"
 								className="portfolio__link-image artinka"
 							/>
 							<p className="portfolio__link-text">
-								Strona www dla artystki od malowania ciała{" "}
+								Strona www dla artystki od malowania twarzy{" "}
 								<span>artinka.pl</span>
 							</p>
 							<button className="portfolio__play-btn">
 								<span className="fa-regular fa-circle-play"></span>
 							</button>
 						</Link>
+
 						<Link
 							onMouseEnter={() => setSecondAnimation(true)}
 							onMouseLeave={() => setSecondAnimation(false)}
@@ -78,7 +76,7 @@ const Portfolio = () => {
 						>
 							<img
 								src={kris}
-								alt="screen ze strony gdansk-adwokat.pl"
+								alt="Zdjecie strony internetowej gdansk-adwokat.pl"
 								className="portfolio__link-image kris"
 							/>
 							<p className="portfolio__link-text">
@@ -89,9 +87,53 @@ const Portfolio = () => {
 								<span className="fa-regular fa-circle-play"></span>
 							</button>
 						</Link>
+
+						<Link
+							to="https://dekarz.elblag.pl/"
+							className={`css-1c2fuzs portfolio__link img-box third ${
+								fifthAnimation ? "animateOn" : "animateOff"
+							}`}
+							onMouseEnter={() => setFifthAnimation(true)}
+							onMouseLeave={() => setFifthAnimation(false)}
+						>
+							<img
+								src={firstPortfolioImg}
+								alt="Strona internetowa dla firmy dekarskiej dekarz.elblag.pl"
+								className="portfolio__link-image"
+							/>
+							<p className="portfolio__link-text">
+								Strona internetowa dla firmy dekarskiej{" "}
+								<span>dekarz.elblag.pl</span>
+							</p>
+							<button className="portfolio__play-btn">
+								<span className="fa-regular fa-circle-play"></span>
+							</button>
+						</Link>
+
+						<Link
+							to="#"
+							className={`css-1c2fuzs portfolio__link img-box fourth ${
+								sixthAnimation ? "animateOn" : "animateOff"
+							}`}
+							onMouseEnter={() => setSixthAnimation(true)}
+							onMouseLeave={() => setSixthAnimation(false)}
+						>
+							<img
+								src={fourthPortfolioImg}
+								alt="Prototyp strony dla firmy transportowej"
+								className="portfolio__link-image adrespect"
+							/>
+							<p className="portfolio__link-text">
+								Prototyp strony www dla firmy transportowej
+							</p>
+							<button className="portfolio__play-btn">
+								<span className="fa-regular fa-circle-play"></span>
+							</button>
+						</Link>
+
 						<Link
 							to="https://kwaq102.github.io/agency-travel-story/"
-							className={`css-1c2fuzs portfolio__link img-box third ${
+							className={`css-1c2fuzs portfolio__link img-box fifth ${
 								thirdAnimation ? "animateOn" : "animateOff"
 							}`}
 							onMouseEnter={() => setThirdAnimation(true)}
@@ -111,7 +153,7 @@ const Portfolio = () => {
 						</Link>
 						<Link
 							to="#"
-							className={`css-1c2fuzs portfolio__link img-box fourth ${
+							className={`css-1c2fuzs portfolio__link img-box sixth ${
 								fourthAnimation ? "animateOn" : "animateOff"
 							}`}
 							onMouseEnter={() => setFourthAnimation(true)}
@@ -125,50 +167,6 @@ const Portfolio = () => {
 							<p className="portfolio__link-text">
 								Strona www dla wirtualnej assystentki i wsparcie prowadzenia
 								działalności.
-							</p>
-							<button className="portfolio__play-btn">
-								<span className="fa-regular fa-circle-play"></span>
-							</button>
-						</Link>
-
-						{/* ADDITIONAL 2 EXAMPLE LINKS */}
-
-						<Link
-							to="#"
-							className={`css-1c2fuzs portfolio__link img-box fifth ${
-								fifthAnimation ? "animateOn" : "animateOff"
-							}`}
-							onMouseEnter={() => setFifthAnimation(true)}
-							onMouseLeave={() => setFifthAnimation(false)}
-						>
-							<img
-								src={example1}
-								alt=""
-								className="portfolio__link-image waldek"
-							/>
-							<p className="portfolio__link-text">
-								Strona www dla firmy transportowej.
-							</p>
-							<button className="portfolio__play-btn">
-								<span className="fa-regular fa-circle-play"></span>
-							</button>
-						</Link>
-
-						<Link
-							to="#"
-							className={`css-1c2fuzs portfolio__link img-box sixth ${
-								sixthAnimation ? "animateOn" : "animateOff"
-							}`}
-							onMouseEnter={() => setSixthAnimation(true)}
-							onMouseLeave={() => setSixthAnimation(false)}
-						>
-							<img
-								src={example2}
-								alt=""
-								className="portfolio__link-image adrespect"
-							/>
-							<p className="portfolio__link-text">
-								Strona www w ramach rekrutacji.
 							</p>
 							<button className="portfolio__play-btn">
 								<span className="fa-regular fa-circle-play"></span>
