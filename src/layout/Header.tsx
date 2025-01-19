@@ -25,7 +25,7 @@ const Header = () => {
 							<h1 className="header-title">
 								<span>Nowoczesne</span>
 								<br />
-								Strony internetowe <strong>gajewwwski.pl</strong>
+								Strony internetowe <strong>gajewwwski.net</strong>
 							</h1>
 							<p className="header-text">
 								Strony internetowe tworzone z pasją! Wprowadź swoją firmę do

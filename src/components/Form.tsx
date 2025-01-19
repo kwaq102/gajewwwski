@@ -1,4 +1,4 @@
-import React, { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loading from "./Loading";
@@ -30,7 +30,7 @@ const Form = () => {
 		const timer = setTimeout(() => {
 			setSuccess(false);
 			setStatus(false);
-		}, 6000);
+		}, 5000);
 
 		return () => clearInterval(timer);
 	}, [success, status]);
@@ -39,7 +39,7 @@ const Form = () => {
 		const timer = setTimeout(() => {
 			setFailed(false);
 			setStatus(false);
-		}, 6000);
+		}, 5000);
 
 		return () => clearInterval(timer);
 	}, [failed, status]);
@@ -51,7 +51,6 @@ const Form = () => {
 			...form,
 			[key]: value,
 		}));
-		console.log(form.checked);
 	};
 
 	const updateErrorsMessage = (key: string, value: string) => {
@@ -93,7 +92,6 @@ const Form = () => {
 			errorsMessage.message ||
 			errorsMessage.checked
 		) {
-			console.log("jesteśmy w błędzie");
 			return;
 		}
 
@@ -101,27 +99,22 @@ const Form = () => {
 
 		try {
 			const response = await axios.post(
-				// "https://gajewwwski.net/contact/contact.php",
-				"http://localhost/contact/contact.php",
-
+				"https://gajewwwski.net/contact/contact.php",
 				{
 					email: form.email,
 					name: form.name,
 					message: form.message,
 				}
 			);
-			console.log(response);
 
 			if (response.status !== 200) {
-				console.log(response);
-				console.error("Nie można wysłać wiadomosći");
+				setFailed(true);
 			} else {
 				setSuccess(true);
 				clearForm();
 			}
 		} catch (e) {
 			setFailed(true);
-			console.error("Nie można wysłać wiadomosći");
 		} finally {
 			setLoading(false);
 			setStatus(true);

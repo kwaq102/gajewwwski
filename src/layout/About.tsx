@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HeadingSection from "../components/HeadingSection";
 import { scrollToTop } from "../ts/scrollTop";
 
@@ -57,7 +57,6 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			{/* Te zdjęcie może takie po skosie jak w aktywwwni */}
 			<div className="about__image"></div>
 		</section>
 	);

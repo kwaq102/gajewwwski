@@ -27,7 +27,7 @@ const Contact = () => {
 						<span className="fa-solid fa-earth-europe contact__details__icon"></span>
 						<h5 className="contact__details__box__title">Adres</h5>
 						<p className="contact__details__text">
-							On-Line <span>Pracuję zdalnie</span>
+							On-Line - <span>pracuję zdalnie</span>
 						</p>
 					</div>
 					<div className="contact__details__box__socials">

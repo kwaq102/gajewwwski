@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 
@@ -44,6 +44,7 @@ const Portfolio = () => {
 						</p>
 					</div>
 					<div className="portfolio__links">
+						{/* FIRST */}
 						<Link
 							to="https://artinka.pl"
 							className={`css-1c2fuzs portfolio__link img-box first ${
@@ -66,6 +67,7 @@ const Portfolio = () => {
 							</button>
 						</Link>
 
+						{/* SECOND */}
 						<Link
 							onMouseEnter={() => setSecondAnimation(true)}
 							onMouseLeave={() => setSecondAnimation(false)}
@@ -88,6 +90,7 @@ const Portfolio = () => {
 							</button>
 						</Link>
 
+						{/* THIRD */}
 						<Link
 							to="https://dekarz.elblag.pl/"
 							className={`css-1c2fuzs portfolio__link img-box third ${
@@ -110,6 +113,7 @@ const Portfolio = () => {
 							</button>
 						</Link>
 
+						{/* FOURTH */}
 						<Link
 							to="#"
 							className={`css-1c2fuzs portfolio__link img-box fourth ${
@@ -131,6 +135,7 @@ const Portfolio = () => {
 							</button>
 						</Link>
 
+						{/* FIFTH */}
 						<Link
 							to="https://kwaq102.github.io/agency-travel-story/"
 							className={`css-1c2fuzs portfolio__link img-box fifth ${
@@ -151,6 +156,8 @@ const Portfolio = () => {
 								<span className="fa-regular fa-circle-play"></span>
 							</button>
 						</Link>
+
+						{/* SIXTH */}
 						<Link
 							to="#"
 							className={`css-1c2fuzs portfolio__link img-box sixth ${
@@ -165,8 +172,8 @@ const Portfolio = () => {
 								className="portfolio__link-image travel"
 							/>
 							<p className="portfolio__link-text">
-								Strona www dla wirtualnej assystentki i wsparcie prowadzenia
-								działalności.
+								Projekt strony www dla wirtualnej assystentki i wsparcie
+								prowadzenia działalności.
 							</p>
 							<button className="portfolio__play-btn">
 								<span className="fa-regular fa-circle-play"></span>

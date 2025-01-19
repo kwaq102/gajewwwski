@@ -34,7 +34,7 @@ const Navigation = () => {
 	));
 
 	const handleScroll = () => {
-		if (window.scrollY > 60) {
+		if (window.scrollY > 80) {
 			setBgNav(true);
 		} else {
 			setBgNav(false);

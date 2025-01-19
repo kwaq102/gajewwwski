@@ -1,5 +1,3 @@
-import React from "react";
-
 const MyAdvantagesFooter = () => {
 	return (
 		<section className="myAdvantages__footer">

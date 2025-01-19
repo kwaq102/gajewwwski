@@ -1,11 +1,10 @@
-import photo from "../img/image-advantages.png";
 import { useNavigate } from "react-router-dom";
 import HeadingSection from "../components/HeadingSection";
 import { Fade } from "react-awesome-reveal";
+import photo from "../img/image-advantages.png";
 
 const MyAdvantages = () => {
 	const navigate = useNavigate();
-
 	const scrollToCertificates = () => {
 		navigate("/o-mnie", { state: { scrollTo: "certificates" } });
 	};

@@ -1,12 +1,11 @@
+import { useCallback, useMemo, useState } from "react";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
-import { useCallback, useMemo } from "react";
 
 const ParticlesComponent = () => {
-	// TODO Tutaj zrobić jakis hook, który zareaguje na szerokość okna przeglądarki i ustawi liczbę kropek
-
-	// TODO ogarnnąć abyt tylko działało na headerze a nie na całej stronie
+	const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
+	const dotNumbers = isMobile ? 10 : 30;
 
 	const options = useMemo(() => {
 		return {
@@ -54,7 +53,7 @@ const ParticlesComponent = () => {
 					value: { min: 1, max: 3 },
 				},
 				number: {
-					value: 30,
+					value: dotNumbers,
 				},
 			},
 			style: {

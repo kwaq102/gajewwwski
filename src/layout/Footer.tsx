@@ -12,6 +12,7 @@ const Footer = () => {
 			</NavLink>
 		</li>
 	));
+
 	return (
 		<footer className="footer">
 			<div className="footer__container">

@@ -27,8 +27,6 @@ import MyValues from "../components/MyValues";
 import CertificatesGallery from "../components/Galleries/CertificatesGallery";
 import { useLocation } from "react-router-dom";
 
-//TODO Ogólnie podzielić ten komponent bo jest za wielki jak po mojemu
-
 const AboutPage = () => {
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
 	const location = useLocation();
@@ -180,8 +178,6 @@ const AboutPage = () => {
 						</h2>
 						<div className="about__values">
 							<ul className="about__values__list">
-								{/* TODO ten list item jest podobny jak komponent OfferElement - może uda się go połączyć */}
-
 								<MyValues
 									children={<Fire size="100" />}
 									title="Pasja"
@@ -267,7 +263,6 @@ const AboutPage = () => {
 							</div>
 						</div>
 					</Element>
-					{/* <div>POMYŚLEĆ TU O JAKIEJŚ CALL TO ACTION</div> */}
 				</section>
 			</div>
 		</Fade>
