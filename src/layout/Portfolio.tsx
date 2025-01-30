@@ -38,9 +38,8 @@ const Portfolio = () => {
 							ścieżkę, której zakres możliwości pozostaje otwarty. Każdy projekt
 							traktuję z pasją i zaangażowaniem, starając się w pełni zrozumieć
 							potrzeby klienta oraz sprostać jego oczekiwaniom podczas
-							realizacji. Wierzę, że każda strona internetowa jest unikalnym
-							doświadczeniem, gotowym zaprowadzić nas daleko w świat cyfrowej
-							kreacji.
+							realizacji. Uważam, że każda strona internetowa to unikalne
+							doświadczenie, które otwiera drzwi do cyfrowych innowacji.
 						</p>
 					</div>
 					<div className="portfolio__links">

@@ -15,7 +15,7 @@ const Offer = () => {
 
 	return (
 		<section className="offer">
-			<HeadingSection title="Oferta" nameClass="offer__title" />
+			<HeadingSection title="Moja oferta" nameClass="offer__title" />
 			<Fade cascade damping={0.1} triggerOnce>
 				{offer}
 			</Fade>

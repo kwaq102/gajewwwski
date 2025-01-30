@@ -19,13 +19,10 @@ const Footer = () => {
 				<div className="footer__description">
 					<div className="footer__logo">gajewwwski.pl</div>
 					<p className="footer__text">
-						Tworzenie profesjonalnych stron internetowych. Zakres usług
-						obejmujące różnorodne projekty, takie jak landing page, strony
-						wizytówki, blogi, sklepy i wiele innych. Moje usługi
-						programistyczno-informatyczne obejmują szeroki zakres działań, a
-						także oferujemy skonsultowane doradztwo z zakresu marketingu
-						online.Zapraszam do kontaktu, aby dowiedzieć się więcej o tym, jak
-						mogę wesprzeć Twój biznes online.
+						Tworzę profesjonalne strony internetowe – od landing page, przez
+						wizytówki, po blogi i inne. Dopasowuję projekty do Twoich potrzeb,
+						żeby były dokładnie takie, jak chcesz. Napisz do mnie, a pomogę
+						Twojemu biznesowi zaistnieć w internecie!
 					</p>
 				</div>
 				<div className="footer__nav__box">

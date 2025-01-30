@@ -35,7 +35,7 @@ const PortfolioPage = () => {
 			<div className="PortfolioPage page">
 				<HeaderPage
 					title="Portfolio"
-					description=" Realizacje, które przekształcają wizję w rzeczywistość dzięki nowoczesnym technologiom i kreatywnemu podejściu. Każdy projekt to historia, która zaczyna się od Twojej wizji, a kończy na funkcjonalnej stronie internetowej, która wyróżnia się w sieci."
+					description="Moje realizacje to połączenie nowoczesnych technologii i kreatywnego podejścia. Każdy projekt to proces, w którym przekształcam pomysły w estetyczne i funkcjonalne strony internetowe. Tworzę rozwiązania, które nie tylko robią wrażenie, ale także zapewniają wygodę użytkowania i niezawodne działanie."
 				/>
 				<section className="portfolio__wrapper">
 					<h2 className="portfolio__heading heading-h2">

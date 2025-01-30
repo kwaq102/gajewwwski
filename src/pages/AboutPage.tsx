@@ -83,7 +83,7 @@ const AboutPage = () => {
 			<div className="aboutPage page">
 				<HeaderPage
 					title="O mnie"
-					description="Freelancer zafascynowany programowaniem i tworzeniem stron internetowych. Dla mnie praca w tej dziedzinie to nie tylko zawód, lecz także się źródło ogromnej satysfakcji."
+					description="Jestem freelancerem z pasją do tworzenia stron internetowych. To dla mnie nie tylko praca, ale też sposób na rozwijanie umiejętności i odpowiadanie na potrzeby klientów."
 				/>
 
 				<section className="about__wrapper">
@@ -96,11 +96,11 @@ const AboutPage = () => {
 							<div className="about__box__entry__wrapper">
 								<div className="about__box__description">
 									<p className="about__box__description__text">
-										Przez lata z pasją poszerzam swoją wiedzę w dziedzinie
-										programowania webowego i tworzenia stron internetowych
-										poprzez udział w różnorodnych kursach. To nieustanne
-										kształcenie pozwala mi być na bieżąco z najnowszymi trendami
-										i technologiami.
+										Przez lata z pasją rozwijam swoje umiejętności w
+										programowaniu webowym i tworzeniu stron internetowych.
+										Udział w wielu kursach i ciągłe kształcenie pozwala mi być
+										na bieżąco z najnowszymi technologiami i trendami, by
+										oferować możliwie najbardziej optymalne rozwiązania.
 									</p>
 									<Link
 										to="certyfikaty"
@@ -131,9 +131,10 @@ const AboutPage = () => {
 								</h2>
 								<div className="about__box__description">
 									<p className="about__box__description__text">
-										Moim celem jest tworzenie technologii, które służą Tobie.
-										Dzięki doświadczeniu w pracy z klientami potrafię dostosować
-										rozwiązania do Twoich potrzeb, by osiągnąć zamierzone cele.”
+										Tworzę strony internetowe, które wspierają rozwój Twojego
+										biznesu. Dzięki doświadczeniu w pracy z klientami
+										dostosowuję rozwiązania tak, by idealnie odpowiadały Twoim
+										potrzebom i pomagały osiągać zamierzone cele.
 									</p>
 								</div>
 							</div>
@@ -148,17 +149,17 @@ const AboutPage = () => {
 						<div className="about__box__wrapper">
 							<div className="about__box__wrapper__content marginTop">
 								<h2 className="about__heading heading-h2">
-									Budowanie Partnerskich <span>Relacji</span>
+									Współpraca <span>która procentuje</span>
 								</h2>
 								<div className="about__box__description">
 									<p className="about__box__description__text">
-										Jako freelancer doskonale współpracuję z małymi i średnimi
-										firmami. Każdy projekt traktuję z największym szacunkiem
-										wobec klienta, starając się pełnię zrozumieć jego potrzeby i
-										oczekiwania. Moim celem jest budowanie partnerskich relacji
-										opartych na wzajemnym zaufaniu oraz efektywnej komunikacji,
-										aby wspólnie osiągnąć sukces w projektach i sprostać
-										oczekiwaniom.
+										Współpracuję z małymi i średnimi firmami, czerpiąc
+										satysfakcję z wpływu, jaki moja praca ma na ich rozwój.
+										Każdy projekt traktuję z pełnym zaangażowaniem, starając się
+										dokładnie zrozumieć potrzeby klienta. Dzięki doświadczeniu
+										potrafię nie tylko zrealizować Twoje oczekiwania, ale także
+										doradzić najlepsze rozwiązania. Jestem przekonany, że dobra
+										komunikacja i zaufanie to klucz owocnej współpracy.
 									</p>
 								</div>
 							</div>

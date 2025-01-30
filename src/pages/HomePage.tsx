@@ -32,6 +32,7 @@ const HomePage = () => {
 				<meta property="og:url" content="https://gajewwwski.net" />
 				<meta property="og:type" content="website" />
 			</Helmet>
+
 			<Header />
 
 			<main className="main">
@@ -43,11 +44,7 @@ const HomePage = () => {
 				<Portfolio />
 				<CallToAction
 					title="Twoja przygoda zaczyna się tutaj!"
-					description="Miło mi, że zainteresowałeś się moją stroną! To tylko wierzchołek góry
-					lodowej, bo najważniejsze jest to, że teraz Ty możesz stworzyć swoją
-					własną wyjątkową stronę internetową! Niech Twoja historia zacznie się
-					właśnie tutaj. Napisz do mnie już dziś, abyśmy mogli razem zrealizować
-					Twoje pomysły i stworzyć coś wyjątkowego!"
+					description="Super, że trafiłeś na moją stronę! To dopiero początek – teraz Ty możesz stworzyć swoją własną, wyjątkową stronę! Napisz do mnie, a razem zrealizujemy Twoje pomysły i stworzymy coś naprawdę fajnego!"
 				/>
 				<Contact />
 			</main>

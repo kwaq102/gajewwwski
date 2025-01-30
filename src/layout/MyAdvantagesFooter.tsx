@@ -1,12 +1,14 @@
 const MyAdvantagesFooter = () => {
 	return (
 		<section className="myAdvantages__footer">
+			<h3>Współpraca oparta na wartościach</h3>
 			<p className="myAdvantages__footer-text">
-				Wierzę, że powyższe wartości sprawiają, że jestem idealnym partnerem do
-				realizacji Twoich potrzeb biznesowych. Jeśli szukasz profesjonalizmu,
-				pasji i zaangażowania, a koleżeńskie relacje nie są Ci obce to
-				współpraca ze mną będzie satysfakcjonująca dla obu stron.
+				Wierzę, że te wartości sprawiają, że jestem odpowiednim partnerem do
+				realizacji Twoich celów biznesowych. Jeśli cenisz profesjonalizm, pasję
+				i zaangażowanie, a współpraca oparta na zaufaniu i dobrej atmosferze
+				jest dla Ciebie ważna – zapraszam do współpracy!
 			</p>
+			<button>Zacznij współpracę</button>
 		</section>
 	);
 };
