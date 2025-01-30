@@ -11,9 +11,9 @@ export const servicesList = [
         title: "Strony internetowe",
         subTitle: "Każda strona jest jak nowa przygoda",
         services: [
-            "Tworzę nowoczesne strony internetowe, oparte na najnowszych standardach.",
-            "Podejście 'mobile first' gwarantuje doskonałą widoczność na wszystkich urządzeniach, co pozwala Twoim klientom łatwo dotrzeć do Twojej oferty.",
-            "Gwarantuję, że każda strona będzie zgodna z aktualnymi trendami i dostosowana do różnych platform, zapewniając wyjątkowe doświadczenie użytkownika.",
+            "Specjalizuję się w tworzeniu stron internetowych, opierając się na najwyższych standardach i nowoczesnych technologiach.",
+            `Podejście "mobile first" gwarantuje doskonałą widoczność na wszystkich urządzeniach, co pozwala Twoim klientom łatwo dotrzeć do Twojej oferty.`,
+            "Optymalizuję strony pod kątem szybkości, co zwiększa satysfakcję użytkowników i wpływa na lepsze pozycjonowanie w wyszukiwarkach.",
         ]
     },
 
@@ -23,10 +23,10 @@ export const servicesList = [
         title: "Rozwiązania hostingowe",
         subTitle: "Bezpieczne schronienie dla Twojej strony",
         services: [
-            "Doradztwo w wyborze i rejestracji domeny, aby znaleźć idealną nazwę dla Twojej marki.",
-            "Wybór odpowiedniego hostingu zgodnego z Twoimi potrzebami.",
-            "Implementację protokołu SSL dla zwiększenia bezpieczeństwa.",
-            "Umieszczanie treści na serwerze oraz pełną konfigurację."
+            "Doradzam w wyborze i rejestracji domeny, aby znaleźć idealną nazwę dla Twojej marki.",
+            "Pomagam w doborze odpowiedniego hostingu dopasowanego do Twoich potrzeb.",
+            "Instaluję protokół SSL, zapewniając wyższy poziom bezpieczeństwa Twojej strony.",
+            "Zajmuję się umieszczaniem treści na serwerze i pełną konfiguracją witryny."
         ]
     },
 
@@ -34,12 +34,12 @@ export const servicesList = [
         img: seoImg,
         imgAlt: "Grafika z napisem seo, czyli skrót od Search Engine Optimization",
         title: "Optymalizacja SEO",
-        subTitle: "Bez optymalizacji SEO strona internetowa jest jak igła w stogu cyfrowego siana",
+        subTitle: "Pozycjonowanie to inwestycja w sukces Twojej strony",
         services: [
-            "Tworzenie stron www przyjaznych wyszukiwarkom, co zwiększa ich widoczność.",
-            "Stosowanie najnowszych standardów oraz odpowiednich znaczników semantycznych dla lepszej indeksacji",
-            "Wybór właściwych słów kluczowych, które przyciągną potencjalnych klientów.",
-            "Optymalizację szybkości działania strony, co wpływa na zadowolenie użytkowników."
+            "Tworzę strony internetowe przyjazne wyszukiwarkom, co zwiększa ich widoczność.",
+            "Stosuję najwyższe standardy i odpowiednie znaczniki semantyczne, aby poprawić indeksację.",
+            "Dobieram właściwe słowa kluczowe, które przyciągną uwagę klientów.",
+            "Optymalizuję szybkość działania strony, co zwiększa satysfakcję użytkowników."
 
         ]
     },
@@ -51,9 +51,9 @@ export const servicesList = [
         subTitle: "Utrzymuj swoją stronę w dobrej formie",
         services: [
             "Zapewniam pełną administrację strony internetowej",
-            "Kontrolę nad prawidłowym działaniem witryny, aby uniknąć przestojów",
-            "Wprowadzanie niezbędnych poprawek oraz modernizację treści, by strona zawsze wyglądała świeżo",
-            "Aktualizację wtyczek CMS w celu zapewnienia bezpieczeństwa i wydajności"
+            "Kontrolę nad funkcjonowaniem witryny, aby uniknąć przestojów i problemów z dostępnością.",
+            "Wprowadzanie niezbędnych poprawek oraz modernizację treści, by strona zawsze wyglądała atrakcyjnie.",
+            "Aktualizację wtyczek CMS, co zapewnia bezpieczeństwo i optymalną wydajność strony."
         ]
     },
 
@@ -63,8 +63,8 @@ export const servicesList = [
         title: "Web Design",
         subTitle: "Zaprojektuj swój wirtualny świat",
         services: [
-            "Tworzeniu mockupów stron www zgodnych z najnowszymi standardami UX/UI, co zapewnia intuicyjność nawigacji",
-            "Projektowaniu logotypów i grafik, które skutecznie oddają charakter Twojej marki",
+            "Tworzenie mockupów stron www zgodnych z najnowszymi standardami UX/UI, co zapewnia intuicyjność nawigacji",
+            "Projektowanie logotypów i grafik, które skutecznie oddają charakter i wartości Twojej marki",
         ]
     },
 ]

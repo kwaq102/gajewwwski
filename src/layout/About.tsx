@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HeadingSection from "../components/HeadingSection";
 import { scrollToTop } from "../ts/scrollTop";
 
@@ -8,14 +8,12 @@ const About = () => {
 			<div className="about__content">
 				<HeadingSection nameClass="about__title" title="O mnie" />
 				<p className="about__content__text">
-					Witaj na mojej stronie! Jestem Kamil - entuzjasta nowych technologii.
-					Jestem freelancerem, a moja pasja to tworznie stron internetowych.
-					Każdy projekt traktuję jak wyjątkową podróż (prawie taką jak do
-					Mordoru ;)), do której chcę Cię zaprosić! Moim celem jest pomoc w
-					rozwoju Twojej marki i zbudowanie lepszej pozycji w cyfrowym świecie.
-					Do każdej realizacji podchodzę z taką samą fascynacją i zaangażowaniem
-					jakby to był mój pierwszy raz, lecz z co raz większym doświadczeniem.
-					Dowiedz się jak możemy osiągać nowe cele!
+					Cześć! Nazywam się Kamil i jestem pasjonatem tworzenia stron
+					internetowych. Każdy projekt traktuję jak wyjątkową podróż (prawie
+					taką jak do Mordoru ;)), do której chcę Cię zaprosić! Łączę
+					doświadczenie, zaangażowanie i entuzjazm, by pomóc Twojej marce
+					zaistnieć w cyfrowym świecie. Sprawdź, jak razem możemy osiągnąć nowe
+					cele!
 				</p>
 
 				<div className="about__content__links">
@@ -32,8 +30,9 @@ const About = () => {
 								Sprawdź ofertę
 							</Link>
 							<p className="about__content__link-box_text">
-								Zapewniając niezawodne usługi, pomagam Ci zaznaczyć swoją
-								obecność w nieograniczonym świecie cyfrowym.
+								Oferuję kompleksowe usługi, które pomogą Ci zbudować silną i
+								profesjonalną obecność online, a także skutecznie rozwijać Twój
+								biznes w dynamicznie zmieniającym się cyfrowym świecie.
 							</p>
 						</div>
 					</div>
@@ -50,14 +49,14 @@ const About = () => {
 								Moje projekty
 							</Link>
 							<p className="about__content__link-box_text">
-								Moje portfolio to zbiór efektywnych i kreatywnych rozwiązań,
-								odzwierciedlających moje zróżnicowane doświadczenie.
+								To efekt pasji, wytrwałości i zaangażowania. Znajdziesz tu
+								kreatywne rozwiązania, które pozwoliły mi rozwijać umiejętności
+								i wspierać cele moich klientów.
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			{/* Te zdjęcie może takie po skosie jak w aktywwwni */}
 			<div className="about__image"></div>
 		</section>
 	);

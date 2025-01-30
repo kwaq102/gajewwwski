@@ -23,13 +23,13 @@ const Header = () => {
 					<div className="box-content">
 						<Fade direction="up" cascade damping={0.1} triggerOnce>
 							<h1 className="header-title">
-								<span>Nowoczesne</span>
+								<span>Profesjonalne</span>
 								<br />
-								Strony internetowe <strong>gajewwwski.pl</strong>
+								Strony internetowe <strong>gajewwwski.net</strong>
 							</h1>
 							<p className="header-text">
-								Strony internetowe tworzone z pasją! Wprowadź swoją firmę do
-								cyfrowego świata i odkryj potencjał online już dziś!
+								Strony internetowe tworzone z pasją! Inspirują i wspierają
+								rozwój Twojego biznesu w cyfrowym świecie.
 							</p>
 							<p className="header-text header-typing">{textToTyping}</p>
 

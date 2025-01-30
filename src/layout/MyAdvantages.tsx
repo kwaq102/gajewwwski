@@ -1,11 +1,10 @@
-import photo from "../img/image-advantages.png";
 import { useNavigate } from "react-router-dom";
 import HeadingSection from "../components/HeadingSection";
 import { Fade } from "react-awesome-reveal";
+import photo from "../img/image-advantages.png";
 
 const MyAdvantages = () => {
 	const navigate = useNavigate();
-
 	const scrollToCertificates = () => {
 		navigate("/o-mnie", { state: { scrollTo: "certificates" } });
 	};
@@ -13,7 +12,7 @@ const MyAdvantages = () => {
 	return (
 		<section className="myAdvantages">
 			<HeadingSection
-				title="Co mnie wyróżnia?"
+				title="Czym się wyróżniam?"
 				nameClass="myAdvantages__title"
 			/>
 
@@ -24,8 +23,9 @@ const MyAdvantages = () => {
 							<span className="fa-solid fa-book"></span>
 							<h4>Wysokie kwalifikacje</h4>
 							<p>
-								Odbyłem wiele renomowanych kursów. Uczyłem się od najlepszych,
-								co pozwala mi świadczyć usługi na najwyższym poziomie.
+								Ukończyłem wiele renomowanych kursów. Uczyłem się od
+								najlepszych, co pozwala mi świadczyć usługi na najwyższym
+								poziomie.
 								<a
 									className="advantage-item__certificates"
 									onClick={scrollToCertificates}
@@ -65,25 +65,26 @@ const MyAdvantages = () => {
 							<span className="fa-solid fa-star"></span>
 							<h4>Najnowsze standardy</h4>
 							<p>
-								W mojej pracy wykorzystuję najnowsze standardy branżowe,
-								zapewniając klientom innowacyjne i efektywne rozwiązania.
+								Stosuję najnowsze technologie i standardy branżowe, zapewniając
+								innowacyjne i efektywne rozwiązania, które spełniają wysokie
+								wymagania współczesnego internetu.
 							</p>
 						</li>
 						<li className="myAdvantages__box-second__advantage advantage-item">
 							<span className="fa-regular fa-handshake"></span>
 							<h4>Uczciwość</h4>
 							<p>
-								Kładę duży nacisk na uczciwość i transparentność. Współpracując
-								ze mną, możesz być pewien rzetelności i profesjonalizmu.
+								Rzetelność i transparentność są fundamentem współpracy. Zawsze
+								możesz liczyć na szczerość i profesjonalizm w każdym aspekcie
+								naszej pracy.
 							</p>
 						</li>
 						<li className="myAdvantages__box-second__advantage advantage-item">
 							<span className="fa-solid fa-people-line"></span>
 							<h4> Dobry kontakt i luźna atmosfera</h4>
 							<p>
-								Tworzę atmosferę opartą na otwartości i szacunku. Zapewniam
-								dobry kontakt oraz luźną, przyjazną atmosferę podczas
-								współpracy.
+								Dbam o przyjazną atmosferę współpracy. Wierzę, że dobra
+								komunikacja i luźna atmosfera sprzyjają efektywnym rozwiązaniom.
 							</p>
 						</li>
 					</Fade>

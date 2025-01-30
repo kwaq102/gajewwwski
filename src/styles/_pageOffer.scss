@@ -120,13 +120,15 @@
 	.offer__service-box {
 		display: flex;
 		align-items: center;
+		margin: 0;
+		padding: 0;
 
 		&:nth-child(2n) {
 			flex-direction: row-reverse;
 
 			.offer__service__content {
 				padding-right: 5em;
-				padding-left: 20%;
+				padding-left: 10%;
 			}
 		}
 	}
@@ -138,11 +140,34 @@
 	.offer__service__content {
 		width: 50%;
 		margin: 0 auto;
+		padding: 0;
 		padding-left: 5em;
-		padding-right: 20%;
+		padding-right: 10%;
+	}
+
+	.service__heading {
+		margin: 0 0 1em 0;
 	}
 
 	.service__list {
 		margin: 0;
+	}
+}
+
+@media (min-width: map-get($breakpoints, xxl)) {
+	.offer__service-box {
+		&:nth-child(2n) {
+			.offer__service__content {
+				padding-left: 20%;
+			}
+		}
+	}
+
+	.offer__service__content {
+		padding-right: 20%;
+	}
+
+	.service__heading {
+		margin: 0 0 2em 0;
 	}
 }

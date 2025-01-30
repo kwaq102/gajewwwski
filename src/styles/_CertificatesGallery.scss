@@ -1,6 +1,8 @@
 .certificate__img {
 	width: 100%;
 	max-width: 300px;
+	height: 220px;
+	object-fit: contain;
 	margin: 1em;
 	transition: transform 0.2s ease-in;
 

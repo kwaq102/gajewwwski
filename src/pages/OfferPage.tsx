@@ -30,7 +30,7 @@ const OfferPage = () => {
 			<div className="OfferPage page">
 				<HeaderPage
 					title="Oferta"
-					description="Nowoczesne, responsywne strony internetowe, zgodne z najlepszymi standardami. Kompleksowa obsługa – od projektowania, przez administrację, po aktualizacje i zabezpieczenia. Właściwe treści SEO i optymalizacja grafik zapewnią skuteczność w sieci."
+					description="Nowoczesne, responsywne strony internetowe zgodne z najlepszymi standardami. Oferuję kompleksową obsługę – od pomysłu po administrowanie. Zapewniam optymalizację SEO oraz dopasowany i atrakcyjny design."
 				/>
 
 				<section className="offer__wrapper">
@@ -40,14 +40,13 @@ const OfferPage = () => {
 								Sprawdź <span>jak mogę Ci pomóc!</span>
 							</h2>
 							<p className="offer__text">
-								Zajmuję się tworzeniem nowoczesnych, responsywnych stron
-								internetowych, pisząc własny kod lub wykorzystując systemy CMS.
-								Pomagam w wyborze domeny, hostingu oraz wdrażam stronę od A do
-								Z. Dbam o SEO na każdym etapie, by Twoja strona była widoczna w
-								wyszukiwarkach. Oferuję też wsparcie przy późniejszych zmianach,
-								aktualizacji wtyczek oraz zabezpieczeniu witryny. Dodatkowo
-								tworzę treści zgodne z SEO i optymalizuję grafiki, żeby Twoja
-								strona była szybka i atrakcyjna.
+								Tworzę nowoczesne, responsywne strony internetowe – zarówno od
+								podstaw, pisząc własny kod, jak i z wykorzystaniem systemów CMS.
+								Pomagam w wyborze domeny i hostingu oraz wdrażam stronę od A do
+								Z. Dbam o SEO na każdym etapie, aby Twoja strona była widoczna w
+								wyszukiwarkach. Oferuję także wsparcie przy aktualizacjach,
+								wtyczkach oraz zabezpieczeniach. Dodatkowo tworzę treści SEO i
+								optymalizuję grafiki, by Twoja strona była szybka i atrakcyjna.
 							</p>
 							<ButtonLink
 								textBtn="Zapytaj o szczegóły"
@@ -71,9 +70,7 @@ const OfferPage = () => {
 
 				<CallToAction
 					title="Wspólnie stworzymy coś wyjątkowego!"
-					description="Dzięki moim usługom możesz być pewny, że Twoja strona internetowa
-				będzie nie tylko estetyczna, ale również funkcjonalna i widoczna w
-				sieci."
+					description="Dzięki moim usługom zyskasz stronę, która nie tylko przyciąga, ale także działa sprawnie i wyróżnia się w Internecie. Razem stworzymy coś, co pomoże Ci osiągnąć sukces!"
 				/>
 			</div>
 		</Fade>

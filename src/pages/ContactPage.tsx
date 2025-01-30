@@ -27,7 +27,7 @@ const ContactPage = () => {
 			<div className="ContactPage page">
 				<HeaderPage
 					title="Kontakt"
-					description="Nie ma głupich pytań, są tylko nieodkryte możliwości! Skontaktuj się ze mną, a wspólnie znajdziemy rozwiązanie idealne dla Ciebie. Twój projekt zaczyna się od rozmowy."
+					description="Nie ma głupich pytań – są tylko nowe możliwości! Skontaktuj się ze mną, a wspólnie znajdziemy najlepsze rozwiązanie dla Twojego projektu. Wszystko zaczyna się od nawiązania kontaktu."
 				/>
 				<div className="ContactPage__wrapper">
 					<Contact />

@@ -34,7 +34,7 @@ const Navigation = () => {
 	));
 
 	const handleScroll = () => {
-		if (window.scrollY > 60) {
+		if (window.scrollY > 80) {
 			setBgNav(true);
 		} else {
 			setBgNav(false);
@@ -44,29 +44,29 @@ const Navigation = () => {
 	window.addEventListener("scroll", handleScroll);
 
 	return (
-		<nav className={`main-nav ${bgNav && "nav-bg"}`}>
-			<div className="main-nav__logo">
-				<NavLink
-					to="/"
+		<nav className={`main-nav`}>
+			<div className={`main-nav__wrapper ${bgNav && "nav-bg"}`}>
+				<div className="main-nav__logo">
+					<NavLink
+						to="/"
+						onClick={() => {
+							dispatch(hiddenMenu());
+							scrollToTop();
+						}}
+						className={`${bgNav && "logo-white"}`}
+					>
+						gajewwwski<span>.net</span>
+					</NavLink>
+				</div>
+				<ul className={`main-nav__list ${menu && "show-nav"}`}>{navigation}</ul>
+				<div
+					className={`main-nav__btn ${menu && "open"}`}
 					onClick={() => {
-						dispatch(hiddenMenu());
-						scrollToTop();
+						dispatch(oppositeMenu(menu));
 					}}
-					className={`${bgNav && "logo-white"}`}
 				>
-					gajewwwski<span>.net</span>
-				</NavLink>
-			</div>
-
-			<ul className={`main-nav__list ${menu && "show-nav"}`}>{navigation}</ul>
-
-			<div
-				className={`main-nav__btn ${menu && "open"}`}
-				onClick={() => {
-					dispatch(oppositeMenu(menu));
-				}}
-			>
-				<div className="main-nav__hamburger"></div>
+					<div className="main-nav__hamburger"></div>
+				</div>
 			</div>
 		</nav>
 	);

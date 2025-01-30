@@ -1,4 +1,3 @@
-import aboutImg from "../img/aboutPageImg.jpg";
 import { servicesList } from "../ts/servicesList";
 
 const ServiceBox = () => {
