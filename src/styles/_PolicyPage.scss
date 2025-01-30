@@ -1,0 +1,31 @@
+.PolicyPage__wrapper {
+	@include widthContent;
+	max-width: 800px;
+	padding: 0 2em;
+}
+
+.PolicyPage__box {
+	margin: 5em 0;
+}
+
+.PolicyPage__box__heading {
+	margin: 0 0 0.5em 0;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+
+	@media (min-width: map-get($breakpoints, l)) {
+		font-size: 2.4rem;
+	}
+
+	@media (min-width: map-get($breakpoints, xl)) {
+		font-size: 2.6rem;
+	}
+}
+
+.PolicyPage__box__description {
+	font-size: 1.4rem;
+	line-height: 150%;
+	text-align: justify;
+}

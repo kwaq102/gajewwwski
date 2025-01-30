@@ -12,6 +12,7 @@ import PortfolioPage from "./pages/PortfolioPage";
 import ErrorPage from "./pages/ErrorPage";
 import { hiddenMenu } from "./redux/features/menuSlice";
 import ArrowTop from "./components/ArrowTop";
+import PolicyPage from "./pages/PolicyPage";
 
 const App = () => {
 	const menu = useSelector((state: RootState) => state.menu.value);
@@ -40,6 +41,7 @@ const App = () => {
 				<Route path="/oferta" element={<OfferPage />} />
 				<Route path="/portfolio" element={<PortfolioPage />} />
 				<Route path="/kontakt" element={<ContactPage />} />
+				<Route path="/polityka-prywatnosci" element={<PolicyPage />} />
 				<Route path="*" element={<ErrorPage />} />
 			</Routes>
 			<Footer />
