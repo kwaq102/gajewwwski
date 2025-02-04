@@ -10,9 +10,9 @@ import OfferPage from "./pages/OfferPage";
 import ContactPage from "./pages/ContactPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ErrorPage from "./pages/ErrorPage";
-import { hiddenMenu } from "./redux/features/menuSlice";
-import ArrowTop from "./components/ArrowTop";
 import PolicyPage from "./pages/PolicyPage";
+import ArrowTop from "./components/ArrowTop";
+import { hiddenMenu } from "./redux/features/menuSlice";
 
 const App = () => {
 	const menu = useSelector((state: RootState) => state.menu.value);
