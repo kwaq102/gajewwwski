@@ -88,14 +88,14 @@
 	transition: color 0.3s;
 
 	&:hover {
-		color: $hoverColor;
+		color: $oppositeColor;
 		font-weight: 700;
 		text-shadow: 1px 1px 0px black;
 	}
 }
 
 .main-nav__link.active {
-	color: $hoverColor;
+	color: $oppositeColor;
 	font-weight: 700;
 	text-shadow: 1px 1px 0px black;
 }

@@ -12,6 +12,11 @@
 	text-shadow: 1px 1px 3px black;
 }
 
+.myAdvantages__footer__heading,
+.myAdvantages__footer__btn {
+	display: none;
+}
+
 @media (min-width: map-get($breakpoints, xl)) {
 	.myAdvantages__footer-text {
 		width: 800px;
