@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../redux/store/store";
 import { useDispatch } from "react-redux";
 import { hiddenMenu, oppositeMenu } from "../redux/features/menuSlice";
+import logo from "../img/logo/logoWhiteHorizontal.png";
 
 const Navigation = () => {
 	const [bgNav, setBgNav] = useState(false);
@@ -53,9 +54,12 @@ const Navigation = () => {
 							dispatch(hiddenMenu());
 							scrollToTop();
 						}}
-						className={`${bgNav && "logo-white"}`}
 					>
-						gajewwwski<span>.net</span>
+						<img
+							src={logo}
+							alt="Logo gajewwwski.net"
+							className="main-nav__logo__img logo"
+						/>
 					</NavLink>
 				</div>
 				<ul className={`main-nav__list ${menu && "show-nav"}`}>{navigation}</ul>
