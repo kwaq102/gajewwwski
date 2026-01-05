@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navList } from "../ts/navigationList";
+import logo from "../img/logo/logoWhiteHorizontal.png";
 
 const Footer = () => {
 	const [year, setYear] = useState(new Date().getFullYear());
@@ -17,7 +18,9 @@ const Footer = () => {
 		<footer className="footer">
 			<div className="footer__container">
 				<div className="footer__description">
-					<div className="footer__logo">gajewwwski.pl</div>
+					<div className="footer__logo">
+						<img src={logo} alt="Logo gajewwwski.net" />
+					</div>
 					<p className="footer__text">
 						Tworzę profesjonalne strony internetowe – od landing page, przez
 						wizytówki, po blogi i inne. Dopasowuję projekty do Twoich potrzeb,

@@ -7,6 +7,7 @@ import { Fade } from "react-awesome-reveal";
 import firstPortfolioScreen from "../img/portfolio/vertical/firstScreen.jpg";
 import secondPortfolioScreen from "../img/portfolio/vertical/secondScreen.jpg";
 import thirdPortfolioScreen from "../img/portfolio/vertical/thirdVertical.jpg";
+import fourthPortfolioScreen from "../img/portfolio/vertical/magiaDotykuVertical.jpg";
 
 const PortfolioPage = () => {
 	return (
@@ -61,6 +62,13 @@ const PortfolioPage = () => {
 						description="Strona internetowa"
 						link="https://dekarz.elblag.pl/"
 						img={thirdPortfolioScreen}
+					/>
+
+					<CardPortfolio
+						title="dotykmagii.pl"
+						description="Strona internetowa"
+						link="https://dotykmagii.pl/"
+						img={fourthPortfolioScreen}
 					/>
 				</section>
 			</div>

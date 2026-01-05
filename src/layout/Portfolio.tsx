@@ -9,7 +9,7 @@ import artinka from "../img/portfolio/artinka_w500-min.jpg";
 import kris from "../img/portfolio/kris.jpg";
 import travel from "../img/portfolio/travel.jpg";
 import assistant from "../img/portfolio/assistant.jpg";
-import fourthPortfolioImg from "../img/portfolio/waldek.jpg";
+import fourthPortfolioImg from "../img/portfolio/dotykMagii.jpg";
 
 const Portfolio = () => {
 	const [firstAnimation, setFirstAnimation] = useState(false);
@@ -114,7 +114,7 @@ const Portfolio = () => {
 
 						{/* FOURTH */}
 						<Link
-							to="#"
+							to="https://www.dotykmagii.pl/"
 							className={`css-1c2fuzs portfolio__link img-box fourth ${
 								sixthAnimation ? "animateOn" : "animateOff"
 							}`}
@@ -123,11 +123,12 @@ const Portfolio = () => {
 						>
 							<img
 								src={fourthPortfolioImg}
-								alt="Prototyp strony dla firmy transportowej"
+								alt="Strona internetowa dla mobilnego studia masażu Magia Dotyku."
 								className="portfolio__link-image adrespect"
 							/>
 							<p className="portfolio__link-text">
-								Prototyp strony www dla firmy transportowej
+								Strona internetowa dla mobilnego studia masażu Magia Dotyku{" "}
+								<span>dotykmagii.pl</span>
 							</p>
 							<button className="portfolio__play-btn">
 								<span className="fa-regular fa-circle-play"></span>

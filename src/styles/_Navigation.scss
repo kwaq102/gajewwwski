@@ -53,19 +53,9 @@
 
 .main-nav__logo {
 	align-self: center;
-	font-size: 1.5rem;
-	font-style: italic;
-	font-weight: 700;
 
-	a {
-		color: $primaryColor;
-		text-shadow: $textShadowBlack;
-		text-decoration: none;
-		transition: color 0.5s;
-	}
-
-	.logo-white {
-		color: white;
+	.main-nav__logo__img {
+		width: 150px;
 	}
 }
 
@@ -82,20 +72,20 @@
 	padding: 0.5rem;
 	color: white;
 	text-decoration: none;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	text-shadow: 1px 1px 1px black;
 	letter-spacing: 0.5px;
 	transition: color 0.3s;
 
 	&:hover {
-		color: $hoverColor;
+		color: $oppositeColor;
 		font-weight: 700;
 		text-shadow: 1px 1px 0px black;
 	}
 }
 
 .main-nav__link.active {
-	color: $hoverColor;
+	color: $oppositeColor;
 	font-weight: 700;
 	text-shadow: 1px 1px 0px black;
 }
@@ -164,19 +154,16 @@
 }
 
 @media (min-width: map-get($breakpoints, xl)) {
-	.main-nav {
-	}
-
 	.main-nav__wrapper {
 		max-width: 1920px;
 		margin: 0 auto;
-		height: 80px;
+		height: 90px;
 		padding: 0 10em;
 		transition: height 0.3s ease-in-out;
 	}
 
 	.main-nav__wrapper.nav-bg {
-		height: 60px;
+		height: 70px;
 	}
 
 	.main-nav__btn {
